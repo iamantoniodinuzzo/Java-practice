@@ -16,10 +16,11 @@
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
-Questa repository è un insieme di esercizi inerenti al miglior utilizzo del linguaggio java. 
-Di seguito troverai ogni repository con all'interno le rispettive tracce e i link agli svolgimenti (in corso) di ogni esercizio relativo all'argomento del capitolo.
-
-
+<p>Questa repository &egrave; un insieme di esercizi inerenti al miglior utilizzo del linguaggio java.</p>
+<p>Di seguito troverai ogni repository con all'interno le rispettive tracce e i link agli svolgimenti (<em>in corso</em>) di ogni esercizio relativo all'argomento del capitolo.</p>
+<blockquote>
+<p>I contributi e le segnalazioni sono ben accolte.</p>
+</blockquote>
 
 
 # [Java Collection Framework(JFC)](https://github.com/Indisparte/Java-practice/tree/main/JFC)
