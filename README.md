@@ -1,6 +1,5 @@
 <!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <h2 style="display: inline-block">Table of Contents</h2></summary>
   <ul>
     <li>
       <a href="#about-the-project">About the project</a>
@@ -14,7 +13,6 @@
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
   </ul>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
