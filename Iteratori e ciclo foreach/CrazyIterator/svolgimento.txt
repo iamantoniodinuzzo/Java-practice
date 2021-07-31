@@ -1,0 +1,4 @@
+Stampa tutti i numeri primi in quanto il ciclo nel next(), avanza solo se n non è primo .
+**Violazioni**
+hasNext() non può modificare lo stato dell'oggetto come d'accordo nel contratto di iterator
+remove() non lancia la giusta eccezione che in accordo con il contratto dovrebbe essere UnsupportedOperationException()

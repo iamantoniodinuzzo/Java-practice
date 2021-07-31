@@ -1,0 +1,1 @@
+enum Type{CPU, BOARD, RAM}

@@ -1,0 +1,4 @@
+alfa.f(alfa,beta); firme candidate A1; più specifica A1; output "A1";
+beta.f(gamma,beta); firme candidate A1, B1; più specifica B1; output "B1: C1";
+gamma.f(gamma, alfa); firme candidate C3, C2, A1; più specifica C3; output "C3";
+gamma.f(alfa,gamma); firme candidate A1; più specifica A1; output "A1";

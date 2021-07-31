@@ -1,0 +1,4 @@
+alfa . f ( alfa, beta, beta); firme candidate A1,B1; più specifiche B1; output "B1 + B2";
+alfa . f ( beta, alfa, null); firme candidate A1,B1; più specifica B1; output "B1 + B2";
+beta. f  ( beta, beta, beta); firme candidate A1,B1; più specifica B1; output "B1 + B2";
+alfa instanceof B; firme candidate nessuna; output true;

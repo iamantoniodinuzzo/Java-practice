@@ -1,0 +1,3 @@
+arrayB[0].f(null, arrayB); firme candidate B1, B2, B3; più specifica B1; output "B1"
+arrayA[0].f(null, arrayA); firme candidate B2, B3; più specifica B2; output "B2"
+arrayA[0].f(arrayA[0], null) 

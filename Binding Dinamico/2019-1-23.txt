@@ -1,0 +1,4 @@
+alfa. f ( alfa , alfa, null ); firme candidate A1,A2,B1; più specifica A1; output "B1B2"
+beta. f ( alfa , beta, alfa ); firme candidate A2; più specifica A2; output "A2"
+beta. f ( beta , beta, beta ); firme candidate B3,B2,B1,A2; più specifica B2; output "B2"
+beta. f ( alfa , alfa , null); firme candidate B1,A2,A1; più specifica B1; output "B1B2"
