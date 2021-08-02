@@ -127,6 +127,25 @@ Implementare il metodo statico **isSetSmaller**, che accetta due insiemi e un co
 vero se e solo se tutti gli elementi del primo insieme sono più piccoli, in base al comparatore,
 di tutti gli elementi del secondo insieme.
 Porre particolare attenzione alla scelta della firma.
+
+## [subMap](https://github.com/Indisparte/Java-practice/tree/main/JFC/subMap)
+Implementare il metodo subMap che accetta una mappa e una collezione e restituisce una nuova
+mappa ottenuta restringendo la prima alle sole chiavi che compaiono nella collezione. Il metodo
+non modifica i suoi argomenti.
+Valutare le seguenti intestazioni per il metodo subMap, in base ai criteri di funzionalità, completezza,
+correttezza, fornitura di ulteriori garanzie, semplicità e specificità del tipo di ritorno.
+Infine, scegliere l'intestazione migliore oppure proporne un'altra.
+```java
+/*a)*/ <K> Map<K,?> subMap(Map<K,?> m, Collection<K> c)
+/*b)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<?> c)
+/*c)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? super K> c)
+/*d)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? extends K> c)
+/*e)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Set<K> c)
+/*f)*/ <K,V,K2 extends K> Map<K,V> subMap(Map<K,V> m, Collection<K2> c)
+```
+
+<!-- Classi Interne -->
+
 # [Classi interne](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne)
 ## [Washer](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne/Washer)
 La seguente classe rappresenta le operazioni elementari di una lavatrice:
@@ -187,22 +206,6 @@ Triangolo z = new Triangolo.Isoscele(6,5);
 System.out.println(x.getArea());//94.9918
 System.out.println(y.getArea());//19.9999
 System.out.println(z.getArea());//12.0
-```
-
-##[subMap](https://github.com/Indisparte/Java-practice/tree/main/JFC/subMap)
-Implementare il metodo subMap che accetta una mappa e una collezione e restituisce una nuova
-mappa ottenuta restringendo la prima alle sole chiavi che compaiono nella collezione. Il metodo
-non modifica i suoi argomenti.
-Valutare le seguenti intestazioni per il metodo subMap, in base ai criteri di funzionalità, completezza,
-correttezza, fornitura di ulteriori garanzie, semplicità e specificità del tipo di ritorno.
-Infine, scegliere l'intestazione migliore oppure proporne un'altra.
-```java
-/*a)*/ <K> Map<K,?> subMap(Map<K,?> m, Collection<K> c)
-/*b)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<?> c)
-/*c)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? super K> c)
-/*d)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? extends K> c)
-/*e)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Set<K> c)
-/*f)*/ <K,V,K2 extends K> Map<K,V> subMap(Map<K,V> m, Collection<K2> c)
 ```
 
 # [Iteratori e ciclo foreach](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach)
