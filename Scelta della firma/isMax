@@ -1,0 +1,19 @@
+/*a)*/ boolean isMax(Object x, Comparator<Object> c, Set<Object> s);//Funzionale
+																	//E' corretta
+																	//Non è completa
+																	
+/*b)*/ <T> boolean isMax(T x, Comparator<T> c, Set<T> s);//E' funzionale
+														 //E' corretta
+													     //Non è completa
+														
+/*c)*/ <T> boolean isMax(T x, Comparator<? super T> c, Set<T> s);// E' funzionale
+																 //E' corretta
+																 //Non è completa
+																
+/*d)*/ <T> boolean isMax(T x, Comparator<? extends T> c, Set<? super T> s);//Non è funzionale perchè non posso leggere l'insieme
+
+/*e)*/ <T> boolean isMax(T x, Comparator<? super T> c, Set<? super T> s);// Non è funzionale perchè con posso leggere l'insieme
+
+/*f)*/ <S,T extends S> boolean isMax(T x, Comparator<? super S> c, Set<S> s);//E' funzionale
+																			 //E' completa
+																			 //E' corretta
