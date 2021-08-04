@@ -1,21 +1,14 @@
-/*a)*/ <K> Map<K,?> subMap(Map<K,?> m, Collection<K> c);// E' corretta ma non completa perchè non accetta una map e una collezione di tipi diversi. E' funzionale.
-															//La firma è semplice perchè compare solo un parametro di tipo. Non garantisce la non modifica della map.
+/*a)*/ <K> Map<K,?> subMap(Map<K,?> m, Collection<K> c);// E' completa, è corretta, è la più semplice di tutte perchè usa un solo parametro di tipo. E' funzionale.
 
-/*b)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<?> c)//E' completa, corretta e non è funzionale in quanto la collection non può essere letta.
+/*b)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<?> c);// E' completa, non è corretta perchè accetta un tipo troppo generico che non permette di portare a termine il compito.
+															//Garantisce che la collection non venga modificata perchè non può essere invocato il metodo add.
 
-/*c)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? super K> c)//Non è completa perchè la collection non accetterebbe k come parametro di tipo ma solo tutte le superclassi di k,
-																	// corretta e non funzionale in quanto la collection non può essere letta. 
-																	//Non ci sono uleriori garanzie e non è semplice perchè presenta 2 parametri di tipo diversi.
+/*c)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? super K> c);// E' completa, è corretta non è funzionale in quando Collection<? super K> non permette la lettura del contenuto.
 
-/*d)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? extends K> c)//Non è completa perchè la collection non accetterebbe k come parametro di tipo ma solo tutte le sottoclassi di k,
-																	// corretta e funzionale in quanto la collection non può essere modificata. 
-																	//Non è semplice perchè presenta 2 parametri di tipo diversi.
+/*d)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Collection<? extends K> c);// E' completa, E' corretta, garantisce che la collection non venga modificata. Non è funzionale	
+																	// in quanto la collection è sottotipo della map e non permette di restringerla.
 
+/*e)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Set<K> c);// Non è completa in quanto anche le liste sono collezioni e dovrebbero essere accettate, è corretta. E' funzionale.
 
-/*e)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Set<K> c)//Non è completa perchè non accetterebbe le liste che sono collection valide, è corretta e funzionale.
-													//Non ci sono ulteriori garanzie e la firma non è semplice in quanto presenta due variabili di tipo.
-
-
-/*f)*/ <K,V,K2 extends K> Map<K,V> subMap(Map<K,V> m, Collection<K2> c)//Non è completa in quanto non accetta oggetti che non sono sottoclassi di k. 
-																		//Non è corretta perchè la collezione presenta sottoclassi di k il che rende non funzionale il restringimento della map
-																		
+/*f)*/ <K,V,K2 extends K> Map<K,V> subMap(Map<K,V> m, Collection<K2> c);//E' completa, è corretta non è funzionale in quanto la collection è sottotipo di k e non permette il restringimento.
+																		//Il tipo di ritorno è meno specifico
