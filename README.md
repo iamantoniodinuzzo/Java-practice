@@ -12,6 +12,7 @@
     </li>
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
+    <li><a href="#scelta-della-firma">Scelta della firma</a></li>
   </ul>
 
 <!-- ABOUT THE PROJECT -->
