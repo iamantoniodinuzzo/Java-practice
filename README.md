@@ -349,7 +349,7 @@ RunnableWithArg<Integer> r = new RunnableWithArg<Integer>() {
 Thread t = new RunOnSet<Integer>(r, s);
 t . start ()
 ```
-Un possibile output<\br>
+Un possibile output</br>
 1</br>
 6</br>
 44
