@@ -13,6 +13,7 @@
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
+    <li><a href="#multithreading">Multithreading</a></li>
   </ul>
 
 <!-- ABOUT THE PROJECT -->
@@ -287,3 +288,26 @@ l'intestazione migliore oppure proporne un'altra, motivando brevemente la propri
 /*e)*/ <T> boolean isMax(T x, Comparator<? super T> c, Set<? super T> s)
 /*f)*/ <S,T extends S> boolean isMax(T x, Comparator<? super S> c, Set<S> s)
 ```
+# [Multithreading](https://github.com/Indisparte/Java-practice/tree/main/Multithreading)
+## [delayIterator](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/delayIterator.java)
+Implementare un metodo statico delayIterator che prende come argomenti un iteratore i ed un
+numero intero n, e restituisce un nuovo iteratore dello stesso tipo di i, che restituisce gli stessi
+elementi di i, ma in cui ogni elemento viene restituito (dal metodo next) dopo un ritardo di n
+secondi. Viene valutato positivamente l'uso di classi anonime.
+Si ricordi che nella classe Thread è presente il metodo:
+```java
+public static void sleep(long milliseconds) throws InterruptedException
+```
+Esempio d'uso:
+```java
+List<Integer> l = new LinkedList<Integer>();
+l.add(3);
+l.add(4);
+l.add(177);
+
+Iterator<Integer> i = delayIterator(l.iterator()),2);
+while(i.hasNext()){
+	System.out.println(i.next());
+}
+
+Output: il programma stampa il contenuto della lista, mostrando ciascun valore dopo 2 secondi di ritardo.
