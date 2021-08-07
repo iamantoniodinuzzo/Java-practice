@@ -309,5 +309,20 @@ Iterator<Integer> i = delayIterator(l.iterator()),2);
 while(i.hasNext()){
 	System.out.println(i.next());
 }
+```
 
 Output: il programma stampa il contenuto della lista, mostrando ciascun valore dopo 2 secondi di ritardo.
+
+## [PeriodicJob](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/PeriodicJob.java)
+Implementare il metodo statico periodicJob, che accetta un Runnable r e un periodo p espresso in millisecondi e fa partire un'esecuzione di r ogni p millisecondi .
+Il metodo periodicJob non deve essere bloccante.
+Esempio d'uso:
+```java
+Runnable r = new Runnable(){
+	public void run(){
+		System.out.println("Ciao");		
+	}
+};
+periodicJob(r,2000);
+```
+Risultato : il programma stampa "Ciao" ogni 2 secondi.
