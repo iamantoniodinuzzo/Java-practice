@@ -5,8 +5,8 @@ public class RunOnSet<T> extends Thread{
 	
 	private final Collection<Thread> threadCollection = new HashSet<>();
 	
-	public RunOnSet(RunnableWithArg<T> r, Collection<T> c){
-		for(T t : c){
+	public RunOnSet(final RunnableWithArg<T> r,final Collection<T> c){
+		for(final T t : c){
 			threadCollection.add(new Thread()){
 				@Override
 				public void run(){
