@@ -353,3 +353,29 @@ Un possibile output</br>
 1</br>
 6</br>
 44
+## [Shared Object](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/SharedObject.java)
+Elencare tutte le sequenze di output possibili per il seguente programma.
+```java
+public static void main(String[] args) throws InterruptedException {
+	class MyThread extends Thread {
+		private int id;
+		private int[] arr ;
+		public MyThread(int id, int[] arr) {
+			this.id = id;
+			this.arr = arr;
+		}
+		public void run() {
+			synchronized (arr) {
+				arr[0]++;
+				System.out.println(id + ":" + arr[0]) ;
+			}
+		return;
+		}
+	}
+	int [] a = { 0 };
+	Thread t1 = new MyThread(1,a);
+	Thread t2 = new MyThread(2,a);
+	t3 = new MyThread(3,a);
+	t1. start () ; t2. start () ; t3. start () ;
+}
+```
