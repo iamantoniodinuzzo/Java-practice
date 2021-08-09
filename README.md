@@ -326,3 +326,30 @@ Runnable r = new Runnable(){
 periodicJob(r,2000);
 ```
 Risultato : il programma stampa "Ciao" ogni 2 secondi.
+
+## [RunOnSet](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/RunOnSet.java)
+Si consideri la seguente interfaccia.
+```java
+public interface RunnableWithArg<T> {
+	void run(T x);
+}
+```
+Un oggetto RunnableWithArg è simile ad un oggetto Runnable, tranne per il fatto che il suo
+metodo run accetta un argomento.
+Si implementi una classe RunOnSet che esegue il metodo run di un oggetto RunnableWithArg su
+tutti gli oggetti di un dato insieme, in parallelo.
+```java
+Set<Integer> s = new HashSet<Integer>();
+s .add(3); s .add(13); s .add(88);
+RunnableWithArg<Integer> r = new RunnableWithArg<Integer>() {
+	public void run(Integer i) {
+		System.out.println( i/2);
+	}
+};
+Thread t = new RunOnSet<Integer>(r, s);
+t . start ()
+```
+Un possibile output</br>
+1</br>
+6</br>
+44
