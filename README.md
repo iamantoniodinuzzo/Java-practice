@@ -14,6 +14,7 @@
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
     <li><a href="#multithreading">Multithreading</a></li>
+    <li><a href="#classe-mancante">Classe mancante</a></li>
   </ul>
 
 <!-- ABOUT THE PROJECT -->
