@@ -384,3 +384,20 @@ Implementare il metodo statico threadRace, che accetta due oggetti Runnable come
 li esegue contemporaneamente e restituisce 1 oppure 2, a seconda di quale dei due Runnable è
 terminato prima.
 Si noti che threadRace è un metodo bloccante. Sarà valutato negativamente l'uso di attesa attiva.
+
+#[Classe mancante](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante)
+##[2008-3-27](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante/2008-3-27)
+La seguente classe A fa riferimento ad una classe B. Implementare la classe B in modo che venga
+compilata correttamente e permetta la compilazione della classe A.
+```java
+public class A extends B {
+public A(int x) {
+super(x􀀀1, x / 2.0);
+}
+public A(double inutile) { }
+private void stampa(String s) {
+if (s == null) throw new B(s);
+else System.out.println(s) ;
+}
+}
+```
