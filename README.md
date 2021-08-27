@@ -273,6 +273,31 @@ System.out.println(d);//12/120
 System.out.println(a.equals(b));//true
 System.out.println(c.times(b));//2/20
 ```
+	
+## [2008-7-9](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti/2008-7-9)
+Data la seguente classe.
+	
+```java
+public class Z {
+	private Z other;
+	private int val;
+	...
+}
+```
+Si considerino le seguenti specifiche alternative per il metodo equals. Due oggetti x e y di tipo Z
+sono uguali se:
+<ol>
+<li>x.other e y.other puntano allo stesso oggetto ed x.val è maggiore o uguale di y.val;</li>
+<li>x.other e y.other puntano allo stesso oggetto ed x.val e y.val sono entrambi pari;</li>
+<li>x.other e y.other puntano allo stesso oggetto oppure x.val è uguale a y.val;
+</li>
+<li>x.other e y.other sono entrambi null oppure nessuno dei due è null ed x.other.val è uguale a
+y.other.val.</li>
+</ol>
+
+- Dire quali specifiche sono valide e perché. (20 punti)
+- Implementare la specifica (4). (10 punti)
+	
 # [Scelta della firma](https://github.com/Indisparte/Java-practice/tree/main/Scelta%20della%20firma)
 ## [isMax](https://github.com/Indisparte/Java-practice/blob/main/Scelta%20della%20firma/isMax)
 Il metodo isMax accetta un oggetto x, un comparatore ed un insieme di oggetti, e restituisce
