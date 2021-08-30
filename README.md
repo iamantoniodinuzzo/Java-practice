@@ -1,15 +1,10 @@
 <!-- TABLE OF CONTENTS -->
   <h2 style="display: inline-block">Table of Contents</h2></summary>
   <ul>
-    <li>
-      <a href="#about-the-project">About the project</a>
-    </li>
-    <li>
-      <a href="#java-collection-framework">Java Collection Framework</a>
-    </li>
-    <li>
-      <a href="#classi-interne">Classi Interne</a>
-    </li>
+    <li><a href="#about-the-project">About the project</a></li>
+    <li><a href="#java-collection-framework">Java Collection Framework</a></li>
+	<li><a href="esercizi-elementari">Esercizi elementari</a><li>
+    <li><a href="#classi-interne">Classi Interne</a></li>
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
@@ -18,6 +13,7 @@
   </ul>
 
 <!-- ABOUT THE PROJECT -->
+
 # About The Project
 <p>Questa repository &egrave; un insieme di esercizi inerenti al miglior utilizzo del linguaggio java.</p>
 <p>Di seguito troverai ogni repository con all'interno le rispettive tracce e i link agli svolgimenti (<em>in corso</em>) di ogni esercizio relativo all'argomento del capitolo.</p>
@@ -25,6 +21,7 @@
 <p>I contributi e le segnalazioni sono ben accolte.</p>
 </blockquote>
 
+<!-- JAVA COLLECTION FRAMEWORK -->
 
 # [Java Collection Framework](https://github.com/Indisparte/Java-practice/tree/main/JFC)
 ## [Library](https://github.com/Indisparte/Java-practice/tree/main/JFC/Library)
@@ -146,8 +143,30 @@ Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 /*e)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Set<K> c)
 /*f)*/ <K,V,K2 extends K> Map<K,V> subMap(Map<K,V> m, Collection<K2> c)
 ```
+<!-- ESERCIZI ELEMENTARI -->
 
-<!-- Classi Interne -->
+# [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
+
+## [Triangolo](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Triangolo)
+Nell'ambito di un programma di geometria, si implementi la classe **Triangolo**, il cui costruttore
+accetta le misure dei tre lati. Se tali misure non danno luogo ad un triangolo, il costruttore deve
+lanciare un'eccezione. Il metodo **getArea** restituisce l'area di questo triangolo. Si implementino
+anche la classe **Triangolo.Rettangolo**, il cui costruttore accetta le misure dei due cateti, e la classe
+**Triangolo.Isoscele**, il cui costruttore accetta le misure della base e di uno degli altri lati.
+Si ricordi che:
+* Tre numeri a, b e c possono essere i lati di un triangolo a patto che a < b + c, b < a + c e c < a + b.
+* L'area di un triangolo di lati a, b e c è data da:
+$\sqrt{p \cdot p \cdot (p - a) \cdot (p - b) \cdot (p - c)}$(formula di Erone)
+dove p è il semiperimetro.
+```java
+Triangolo x = new Triangolo(10,20,25);
+Triangolo y = new Triangolo.Rettangolo(5,8);
+Triangolo z = new Triangolo.Isoscele(6,5);
+System.out.println(x.getArea());//94.9918
+System.out.println(y.getArea());//19.9999
+System.out.println(z.getArea());//12.0
+```
+<!-- CLASSI INTERNE -->
 
 # [Classi interne](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne)
 ## [Washer](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne/Washer)
@@ -191,25 +210,7 @@ System.out.println(i1) ;//(5,10,5)
 System.out.println(i2) ;//[7,20]
 System.out.println(i3) ;//(5,20]
 ```
-## [Triangolo](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne/Triangolo)
-Nell'ambito di un programma di geometria, si implementi la classe **Triangolo**, il cui costruttore
-accetta le misure dei tre lati. Se tali misure non danno luogo ad un triangolo, il costruttore deve
-lanciare un'eccezione. Il metodo **getArea** restituisce l'area di questo triangolo. Si implementino
-anche la classe **Triangolo.Rettangolo**, il cui costruttore accetta le misure dei due cateti, e la classe
-**Triangolo.Isoscele**, il cui costruttore accetta le misure della base e di uno degli altri lati.
-Si ricordi che:
-* Tre numeri a, b e c possono essere i lati di un triangolo a patto che a < b + c, b < a + c e c < a + b.
-* L'area di un triangolo di lati a, b e c è data da:
-$\sqrt{p \cdot p \cdot (p - a) \cdot (p - b) \cdot (p - c)}$(formula di Erone)
-dove p è il semiperimetro.
-```java
-Triangolo x = new Triangolo(10,20,25);
-Triangolo y = new Triangolo.Rettangolo(5,8);
-Triangolo z = new Triangolo.Isoscele(6,5);
-System.out.println(x.getArea());//94.9918
-System.out.println(y.getArea());//19.9999
-System.out.println(z.getArea());//12.0
-```
+
 
 # [Iteratori e ciclo foreach](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach)
 ## [BinaryTreePreIterator](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/BinaryTreePreIterator)
