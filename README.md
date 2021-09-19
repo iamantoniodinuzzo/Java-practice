@@ -1,9 +1,9 @@
 <!-- TABLE OF CONTENTS -->
-  <h2 style="display: inline-block">Table of Contents</h2></summary>
+  ## Table of Contents
   <ul>
     <li><a href="#about-the-project">About the project</a></li>
     <li><a href="#java-collection-framework">Java Collection Framework</a></li>
-    <li><a href="#esercizi-elementari">Esercizi elementari</a><li>
+    <li><a href="#esercizi-elementari">Esercizi elementari</a></li>
     <li><a href="#classi-interne">Classi Interne</a></li>
     <li><a href="#criterio-di-ordinamento-tra-oggetti">Criterio di ordinamento tra oggetti</a></li>
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
@@ -25,6 +25,8 @@
 <!-- JAVA COLLECTION FRAMEWORK -->
 
 # [Java Collection Framework](https://github.com/Indisparte/Java-practice/tree/main/JFC)
+<a href="#table-of-contents">Back to top</a>
+
 ## [Library](https://github.com/Indisparte/Java-practice/tree/main/JFC/Library)
 Realizzare per una biblioteca le classi **Library** e **Book**. Un oggetto **Book** è caratterizzato dal suo titolo. La classe Library offre le seguenti funzionalità:
 * Un costruttore senza argomenti che crea una biblioteca vuota.
@@ -147,6 +149,7 @@ Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
+<a href="#table-of-contents">Back to top</a>
 
 ## [Triangolo](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Triangolo)
 Nell'ambito di un programma di geometria, si implementi la classe **Triangolo**, il cui costruttore
@@ -170,6 +173,8 @@ System.out.println(z.getArea());//12.0
 <!-- CLASSI INTERNE -->
 
 # [Classi interne](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne)
+<a href="#table-of-contents">Back to top</a>
+
 ## [Washer](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne/Washer)
 La seguente classe rappresenta le operazioni elementari di una lavatrice:
 ```java
@@ -214,6 +219,8 @@ System.out.println(i3) ;//(5,20]
 <!-- CRITERI DI ORDINAMENTO-->
 
 # [Criterio di ordinamento tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Criterio%20di%20ordinamento%20tra%20oggetti)
+<a href="#table-of-contents">Back to top</a>
+
 ## [Time](https://github.com/Indisparte/Java-practice/blob/main/Criterio%20di%20ordinamento%20tra%20oggetti/Time)
 Implementare la classe Time, che rappresenta un orario della giornata (dalle 00:00:00 alle 23:59:59).
 Gli orari devono essere confrontabili secondo Comparable. Il metodo minus accetta un altro orario
@@ -232,6 +239,8 @@ System.out.println(t3.compareTo(Time.MIDDAY)); //-1
 <!-- ITERATORI E CICLO FOR EACH -->
 
 # [Iteratori e ciclo foreach](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach)
+<a href="#table-of-contents">Back to top</a>
+
 ## [BinaryTreePreIterator](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/BinaryTreePreIterator)
 Il seguente frammento di classe definisce un nodo in un albero binario.
 ```java
@@ -267,6 +276,8 @@ for (Integer i : Primes.iterable ) {
 ```
 # [Uguaglianza tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti)
 ## [Fraction](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti/Fraction)
+<a href="#table-of-contents">Back to top</a>
+
 Implementare la classe **Fraction**, che rappresenta una frazione, e la sottoclasse **ReducedFraction**,
 che rappresenta una frazione irriducibile.
 Due oggetti di questi tipi devono essere uguali per equals se rappresentano lo stesso numero
@@ -319,6 +330,8 @@ y.other.val.</li>
 - Implementare la specifica (4). (10 punti)
 	
 # [Scelta della firma](https://github.com/Indisparte/Java-practice/tree/main/Scelta%20della%20firma)
+<a href="#table-of-contents">Back to top</a>
+
 ## [isMax](https://github.com/Indisparte/Java-practice/blob/main/Scelta%20della%20firma/isMax)
 Il metodo isMax accetta un oggetto x, un comparatore ed un insieme di oggetti, e restituisce
 true se, in base al comparatore, x è maggiore o uguale di tutti gli oggetti contenuti nell'insieme.
@@ -335,6 +348,8 @@ l'intestazione migliore oppure proporne un'altra, motivando brevemente la propri
 /*f)*/ <S,T extends S> boolean isMax(T x, Comparator<? super S> c, Set<S> s)
 ```
 # [Multithreading](https://github.com/Indisparte/Java-practice/tree/main/Multithreading)
+<a href="#table-of-contents">Back to top</a>
+
 ## [delayIterator](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/delayIterator.java)
 Implementare un metodo statico delayIterator che prende come argomenti un iteratore i ed un
 numero intero n, e restituisce un nuovo iteratore dello stesso tipo di i, che restituisce gli stessi
@@ -432,6 +447,8 @@ terminato prima.
 Si noti che threadRace è un metodo bloccante. Sarà valutato negativamente l'uso di attesa attiva.
 
 # [Classe mancante](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante)
+<a href="#table-of-contents">Back to top</a>
+
 ## [2008-3-27](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante/2008-3-27)
 La seguente classe A fa riferimento ad una classe B. Implementare la classe B in modo che venga
 compilata correttamente e permetta la compilazione della classe A.
