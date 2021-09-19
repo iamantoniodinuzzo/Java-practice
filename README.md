@@ -5,6 +5,7 @@
     <li><a href="#java-collection-framework">Java Collection Framework</a></li>
     <li><a href="#esercizi-elementari">Esercizi elementari</a><li>
     <li><a href="#classi-interne">Classi Interne</a></li>
+    <li><a href="#criterio-di-ordinamento-tra-oggetti">Criterio di ordinamento tra oggetti</a></li>
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
@@ -210,7 +211,25 @@ System.out.println(i1) ;//(5,10,5)
 System.out.println(i2) ;//[7,20]
 System.out.println(i3) ;//(5,20]
 ```
+<!-- CRITERI DI ORDINAMENTO-->
 
+# [Criterio di ordinamento tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Criterio%20di%20ordinamento%20tra%20oggetti)
+## [Time](https://github.com/Indisparte/Java-practice/blob/main/Criterio%20di%20ordinamento%20tra%20oggetti/Time)
+Implementare la classe Time, che rappresenta un orario della giornata (dalle 00:00:00 alle 23:59:59).
+Gli orari devono essere confrontabili secondo Comparable. Il metodo minus accetta un altro orario
+x come argomento e restituisce la differenza tra questo orario e x, sotto forma di un nuovo
+oggetto Time. La classe fornisce anche gli orari predefiniti MIDDAY e MIDNIGHT.
+</br>ESEMPIO D'USO	
+```java
+Time t1 = new Time(14,35,0);
+Time t2 = new Time(7,10,30);
+Time t3 = t1.minus(t2);
+System.out.println(t3) ; //7:24:30
+System.out.println(t3.compareTo(t2)); //1
+System.out.println(t3.compareTo(Time.MIDDAY)); //-1
+```
+
+<!-- ITERATORI E CICLO FOR EACH -->
 
 # [Iteratori e ciclo foreach](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach)
 ## [BinaryTreePreIterator](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/BinaryTreePreIterator)
