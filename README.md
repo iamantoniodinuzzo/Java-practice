@@ -1,7 +1,6 @@
 <!-- TABLE OF CONTENTS -->
   ## Table of Contents
   <ul>
-    <li><a href="#about-the-project">About the project</a></li>
     <li><a href="#java-collection-framework">Java Collection Framework</a></li>
     <li><a href="#esercizi-elementari">Esercizi elementari</a></li>
     <li><a href="#classi-interne">Classi Interne</a></li>
