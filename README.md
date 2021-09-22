@@ -196,7 +196,7 @@ System.out.println(pc.add(board2)); // incompatibile ! false
 System.out.println(pc.add(board1));
 System.out.println(pc.add(ram));
 ```
-## [BinRel](https://github.com/Indisparte/Java-practice/tree/main/BinRel-Incompleto)
+## [BinRel](https://github.com/Indisparte/Java-practice/tree/main/JFC/BinRel-Incompleto)
 Realizzare la classe BinRel, che rappresenta una relazione binaria tra un insieme e se stesso. Il
 metodo **addPair** aggiunge una coppia di oggetti alla relazione. Il metodo **areRelated** verifica se una
 data coppia di oggetti appartiene alla relazione. Il metodo **isSymmetric** verifica se la relazione è
