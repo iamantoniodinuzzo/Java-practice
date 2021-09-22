@@ -222,10 +222,14 @@ prenota e cancellaPrenotazione accettano uno specialista e il nome di un pazient
 o cancellano la prenotazione, rispettivamente. Il metodo getPrenotati restituisce l'elenco dei
 prenotati.</br>
 La classe deve rispettare le seguenti proprietà:</br>
--Non ci si può prenotare con più di uno specialista.
--Si deve poter aggiungere uno specialista all'enumerazione senza dover modificare la classe
-Clinica.</br>
+
+ - Non ci si può prenotare con più di uno specialista.
+ - Si deve poter aggiungere uno specialista all'enumerazione senza dover
+   modificare la classe Clinica.
+
+</br>
 Inoltre, l'implementazione deve rispettare il seguente **esempio d'uso**:
+
 ```java
 Clinica c = new Clinica();
 c.prenota(Specialista .OCULISTA, "Pippo Franco");
