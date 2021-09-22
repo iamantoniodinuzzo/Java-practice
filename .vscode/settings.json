@@ -2,6 +2,7 @@
     "java.project.sourcePaths": [
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
-        "JFC/Cellphone-Non Completo"
+        "JFC/Cellphone-Non Completo",
+        "JFC/Merge"
     ]
 }

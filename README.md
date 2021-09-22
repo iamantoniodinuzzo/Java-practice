@@ -149,6 +149,17 @@ Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 /*e)*/ <K,V> Map<K,V> subMap(Map<K,V> m, Set<K> c)
 /*f)*/ <K,V,K2 extends K> Map<K,V> subMap(Map<K,V> m, Collection<K2> c)
 ```
+
+## [Merge](https://github.com/Indisparte/Java-practice/tree/main/JFC/Merge)
+Realizzare un metodo chiamato merge che rispetti il seguente contratto:
+
+**Pre-condizione** Accetta due LinkedList dello stesso tipo e di pari lunghezza.
+**Post-condizione** Restituisce una nuova LinkedList ottenuta alternando gli elementi della prima
+lista e quelli della seconda.
+Ad esempio, se la prima lista contiene (1; 2; 3) e la seconda lista (4; 5; 6), la nuova lista deve
+contenere (1; 4; 2; 5; 3; 6).
+**Penale** Se le liste non hanno la stessa lunghezza, lancia IllegalArgumentException
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
