@@ -1,3 +1,6 @@
+import java.util.zip.DataFormatException;
+import java.util.TreeSet;
+
 class Room{
 
     private TreeSet<Reservation> t = new TreeSet<>();
@@ -11,7 +14,7 @@ class Room{
 	*/
 	public Reservation reserve(String nome, int data_inizio, int data_fine){
 		
-		Reservation r=new Reservation(s,di,df);
+		Reservation r=new Reservation(nome,data_inizio,data_fine);
               if(r.contenuto(t,r)){
 				  throw new RuntimeException("Elemento già presente con Nome: "
 											+r.nome_cliente
@@ -24,7 +27,7 @@ class Room{
 		
 	}
 	
-	public TreeSet<Reservation> reservations(){
+	public TreeSet<Reservation> getReservations(){
         return t;
     }
 	
