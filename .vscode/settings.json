@@ -3,8 +3,9 @@
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
         "JFC/Merge",
+        "JFC/Component&Configuration-Non completo",
         "JFC/Cellphone-Non Completo",
         "JFC/Book&Library",
-        "JFC/Component&Configuration-Non completo"
+        "JFC/Bug"
     ]
 }
