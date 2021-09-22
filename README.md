@@ -165,14 +165,14 @@ contenere (1; 4; 2; 5; 3; 6).</br>
 ## [Component & Configuration](https://github.com/Indisparte/Java-practice/tree/main/JFC/Component&Configuration)
 Un sito vuole consentire agli utenti di ordinare computer assemblati. Data l'enumerazione:
 </br>enum Type { CPU, BOARD, RAM; }</br>
-implementare le classi Component, che rappresenta un componente di un PC, e Conguration, che
+implementare le classi Component, che rappresenta un componente di un PC, e Configuration, che
 rappresenta un PC da assemblare.</br>
 
 Un componente è caratterizzato dalla sua tipologia (Type) e da una descrizione (stringa). Il suo
 metodo setIncompatible dichiara che questo componente è incompatibile con un altro componente,
 passato come argomento. Un componente può essere incompatibile con diversi altri componenti.</br>
 
-Il metodo add di Conguration aggiunge un componente a questo PC e restituisce true, ma solo
+Il metodo add di Configuration aggiunge un componente a questo PC e restituisce true, ma solo
 se il componente è compatibile con quelli già inseriti, ed è di tipo diverso da quelli già inseriti,
 altrimenti non lo inserisce e restituisce false.</br>
 
