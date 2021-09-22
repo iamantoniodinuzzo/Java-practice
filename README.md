@@ -152,12 +152,11 @@ Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 
 ## [Merge](https://github.com/Indisparte/Java-practice/tree/main/JFC/Merge)
 Realizzare un metodo chiamato merge che rispetti il seguente contratto:
-
-**Pre-condizione** Accetta due LinkedList dello stesso tipo e di pari lunghezza.
+**Pre-condizione** Accetta due LinkedList dello stesso tipo e di pari lunghezza.</br>
 **Post-condizione** Restituisce una nuova LinkedList ottenuta alternando gli elementi della prima
-lista e quelli della seconda.
+lista e quelli della seconda.</br>
 Ad esempio, se la prima lista contiene (1; 2; 3) e la seconda lista (4; 5; 6), la nuova lista deve
-contenere (1; 4; 2; 5; 3; 6).
+contenere (1; 4; 2; 5; 3; 6).</br>
 **Penale** Se le liste non hanno la stessa lunghezza, lancia IllegalArgumentException
 
 <!-- ESERCIZI ELEMENTARI -->
