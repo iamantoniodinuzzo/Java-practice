@@ -3,7 +3,7 @@
  */
 public class BinRel<T> {
 
-    private Set<Couple> set = new HashSet<>();
+    private Set<Couple<T>> set = new HashSet<>();
   
     public void addPair(T obj1, T obj2){
        set.add(new Couple<T>(obj1, obj2));

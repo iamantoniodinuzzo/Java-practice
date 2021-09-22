@@ -214,6 +214,31 @@ System.out.println( rel .isSymmetric());//true
 System.out.println( rel .areRelated("a", "amaca"));//true
 ```
 
+## [Clinica](https://github.com/Indisparte/Java-practice/tree/main/JFC/Clinica-Incompleto)
+Data la seguente enumerazione:</br>
+enum Specialista { OCULISTA, PEDIATRA; }</br>
+Realizzare la classe Clinica, che permette di prenotare e cancellare visite mediche. I metodi
+prenota e cancellaPrenotazione accettano uno specialista e il nome di un paziente, ed effettuano
+o cancellano la prenotazione, rispettivamente. Il metodo getPrenotati restituisce l'elenco dei
+prenotati.</br>
+La classe deve rispettare le seguenti proprietà:</br>
+-Non ci si può prenotare con più di uno specialista.
+-Si deve poter aggiungere uno specialista all'enumerazione senza dover modificare la classe
+Clinica.</br>
+Inoltre, l'implementazione deve rispettare il seguente **esempio d'uso**:
+```java
+Clinica c = new Clinica();
+c.prenota(Specialista .OCULISTA, "Pippo Franco");
+c.prenota(Specialista .OCULISTA, "Leo Gullotta");
+c.prenota(Specialista .OCULISTA, "Leo Gullotta");
+c.prenota(Specialista .PEDIATRA, "Ciccio Ingrassia");
+c.prenota(Specialista .PEDIATRA, "Leo Gullotta");
+c.cancellaPrenotazione(Specialista .PEDIATRA, "Ciccio Ingrassia");
+Collection<String> ocu = c.getPrenotati(Specialista.OCULISTA);
+System.out.println(ocu);//[Leo Gullotta, Pippo Franco]
+System.out.println(c.getPrenotati( Specialista .PEDIATRA));//[]
+```
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
