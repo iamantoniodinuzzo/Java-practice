@@ -179,6 +179,24 @@ altrimenti non lo inserisce e restituisce false.</br>
 **Suggerimento**: Una classe Component ben progettata non nominerà le 3 istanze di Type.</br>
 
 L'implementazione deve rispettare il seguente esempio d'uso.
+**Esempio d'uso**
+```java
+
+Component cpu1 = new Component(Type.CPU, "Ryzen 5 2600"),
+	cpu2 = new Component(Type.CPU, "Core i5 7500"),
+	board1 = new Component(Type.BOARD, "Prime X470"),
+	board2 = new Component(Type.BOARD, "Prime Z370"),
+	ram = new Component(Type.RAM, "DDR4 8GB");
+	cpu1.setIncompatible(board2);
+	board1.setIncompatible(cpu2);
+Configuration pc = new Configuration();
+System.out.println(pc.add(cpu1));
+System.out.println(pc.add(cpu2)); // due cpu! false
+System.out.println(pc.add(board2)); // incompatibile ! false
+System.out.println(pc.add(board1));
+System.out.println(pc.add(ram));
+```
+
 
 <!-- ESERCIZI ELEMENTARI -->
 
