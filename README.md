@@ -517,6 +517,13 @@ Metodi:
     System.out.println(b.isDone());//false
     b.vote(false);//Exception in thread "main"...
     ```
+## [ExecuteInParallel](https://github.com/Indisparte/Java-practice/tree/main/Multithreading/ExecuteInParallel)
+Implementare il metodo statico ***executeInParallel***, che accetta come argomenti un array di Runnable
+e un numero naturale k, ed esegue tutti i Runnable dell'array, k alla volta.
+
+In altre parole, all'inizio il metodo fa partire i primi k Runnable dell'array. Poi, non appena uno
+dei Runnable in esecuzione termina, il metodo ne fa partire un altro, preso dall'array, no ad
+esaurire tutto l'array.
 
 # [Classe mancante](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante)
 <p align="right">
