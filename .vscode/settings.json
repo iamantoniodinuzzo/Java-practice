@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "Multithreading/VoteBox",
+        "Multithreading/ExecuteInParallel"
+    ]
+}
