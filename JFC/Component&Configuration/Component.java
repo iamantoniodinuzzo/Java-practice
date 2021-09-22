@@ -2,19 +2,23 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.*;
 
+/**
+ * Rappresenta un componente di un PC
+ */
 class Component {
     private Type type;
     private String descrizione;
     private Set<Component> incompatibleComponents = new HashSet<>();
 
     public Component(Type type, String descrizione) {
-
         this.type = type;
         this.descrizione = descrizione;
-
     }
 
-
+    /**
+     * Dichiara che questo componente è incompatibile con il componente passato come parametro
+     * @param component Il componente incompatibile con quest'ultimo
+     */
     public void setIncompatible(Component component) {
         incompatibleComponents.add(component);
     }
@@ -27,26 +31,23 @@ class Component {
         return type;
     }
 
+    public String getDescrizione() {
+        return descrizione;
+    }
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
         if (!(o instanceof Component)) return false;
+
         Component component = (Component) o;
+
         return getType() == component.getType();
     }
 
-    public static Comparator<Component> compareByCompatibility = new Comparator<Component>() {
-        @Override
-        public int compare(Component o1, Component o2) {
-            for (Component com: o2.getIncompatibleComponents()) {
-                if (o1.getIncompatibleComponents().contains(com)) return -1;
-            }
-            return 0;
-        }
-    };
-
     @Override
-    public int hashCode() {
-        return Objects.hash(getType());
+    public String toString() {
+        return "Type: "+this.getType()+" Name: "+this.getDescrizione()+"\n";
     }
+
+    
 }
