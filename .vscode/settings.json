@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Multithreading/VoteBox",
-        "Multithreading/ExecuteInParallel"
+        "Multithreading/ExecuteInParallel",
+        "JFC/Cellphone-Non Completo"
     ]
 }
