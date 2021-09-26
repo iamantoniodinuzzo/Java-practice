@@ -281,6 +281,15 @@ si muove su una griglia di caselle. Il costruttore accetta le dimensioni del liv
 altezza). Il metodo **setWall** accetta le coordinate di una casella e mette un muro in quella casella.
 Il metodo **areConnected** accetta le coordinate di due caselle e restituisce *vero* se e solo se esiste
 un percorso tra di loro.
+```java
+GameLevel map = new GameLevel(3, 3);
+System.out.println(map.areConnected(0,0,2,2));//true
+map.setWall(0,1);
+map.setWall(1,1);
+System.out.println(map.areConnected(0,0,2,2));//true
+map.setWall(2,1);
+System.out.println(map.areConnected(0,0,2,2));//false
+```
 
 <!-- ESERCIZI ELEMENTARI -->
 
