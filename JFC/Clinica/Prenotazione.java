@@ -24,6 +24,12 @@ public class Prenotazione {
     }
 
     @Override
+    public int hashCode() {
+        return mNomePaziente.hashCode() ;
+    }
+
+   
+    @Override
     public String toString(){
         return mNomePaziente;
     }

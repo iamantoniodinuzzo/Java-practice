@@ -4,11 +4,8 @@
         "Multithreading/ExecuteInParallel",
         "JFC/Room",
         "JFC/Merge",
-        "JFC/Component&Configuration-Non completo",
-        "JFC/Cellphone-Non Completo",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/BinRel",
-        "JFC/Clinica"
+        "JFC/Clinica-Incompleto"
     ]
 }
