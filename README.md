@@ -274,6 +274,14 @@ System.out.println(p.getAuthor());//Adriana
 *Suggerimento*: l'invocazione a.lastIndexOf(b) restituisce -1 se la stringa b non è presente nella
 stringa a, e un numero maggiore o uguale di zero altrimenti.
 
+## [GameLevel](https://github.com/Indisparte/Java-practice/tree/main/JFC/GameLevel-Incompleto)
+
+Implementare la classe *GameLevel*, che rappresenta un livello in un gioco 2D, in cui un personaggio
+si muove su una griglia di caselle. Il costruttore accetta le dimensioni del livello (larghezza e
+altezza). Il metodo **setWall** accetta le coordinate di una casella e mette un muro in quella casella.
+Il metodo **areConnected** accetta le coordinate di due caselle e restituisce *vero* se e solo se esiste
+un percorso tra di loro.
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
