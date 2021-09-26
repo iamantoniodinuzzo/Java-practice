@@ -242,6 +242,37 @@ Collection<String> ocu = c.getPrenotati(Specialista.OCULISTA);
 System.out.println(ocu);//[Leo Gullotta, Pippo Franco]
 System.out.println(c.getPrenotati( Specialista .PEDIATRA));//[]
 ```
+## [MergeIfSorted](https://github.com/Indisparte/Java-practice/tree/main/JFC/mergeIfSorted-Incompleto)
+
+Implementare il metodo statico *mergeIfSorted*, che accetta due liste *a* e *b*, e un comparatore *c*, e
+restituisce un'altra lista. Inizialmente, usando due thread diversi, il metodo verica che le liste
+a e b siano ordinate in senso non decrescente (ogni thread si occupa di una lista). Poi, se le liste
+sono eettivamente ordinate, il metodo le fonde (senza modicarle) in un'unica lista ordinata,
+che viene restituita al chiamante. Se, invece, almeno una delle due liste non è ordinata, il metodo
+termina restituendo null.</br>
+Il metodo dovrebbe avere complessità di tempo lineare.</br>
+Porre particolare attenzione alla scelta della rma, considerando i criteri di funzionalità, completezza,
+correttezza, fornitura di garanzie e semplicità.
+
+## [SocialUser](https://github.com/Indisparte/Java-practice/tree/main/JFC/SocialUser)
+
+Per un social network, implementare le classi *SocialUser* e *Post*. Un utente è dotato di un nome
+e può creare dei post tramite il metodo newPost. Il contenuto di un post è una stringa, che
+può contenere nomi di utenti, preceduti dal simbolo "@". Il metodo **getTagged** della classe Post
+restituisce l'insieme degli utenti il cui nome compare in quel post, mentre il metodo **getAuthor**
+restituisce l'autore del post.</br>
+L'implementazione deve rispettare il seguente **esempio d'uso**:
+```java
+SocialUser adriana = new SocialUser("Adriana"),
+			barbara = new SocialUser("Barbara");
+SocialUser.Post p = adriana.newPost("Ecco una foto con @Barbara e @Carla.");
+Set<SocialUser> tagged = p.getTagged();
+System.out.println(tagged);//[Barbara]
+System.out.println(tagged. iterator () .next() == barbara);//true
+System.out.println(p.getAuthor());//Adriana
+```
+*Suggerimento*: l'invocazione a.lastIndexOf(b) restituisce -1 se la stringa b non è presente nella
+stringa a, e un numero maggiore o uguale di zero altrimenti.
 
 <!-- ESERCIZI ELEMENTARI -->
 

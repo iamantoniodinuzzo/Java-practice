@@ -4,8 +4,9 @@
         "Multithreading/ExecuteInParallel",
         "JFC/Room",
         "JFC/Merge",
+        "JFC/Clinica-Incompleto",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Clinica-Incompleto"
+        "JFC/SocialUser"
     ]
 }
