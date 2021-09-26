@@ -29,20 +29,10 @@ public class SocialUser  {
         return name;
     }
 
-    @Override
-    public boolean equals(Object obj){
-        if(!(obj instanceof SocialUser)) return false;
-
-        SocialUser u = (SocialUser) obj;
-
-        return u.getName().equalsIgnoreCase(getName());
-    }
-
     public static class Post{
         private SocialUser author;
         private String text;
         private Set<SocialUser> tags;
-        //TODO: Non estrae la string acompresa tra la @ e lo spazio
         private String regex = "\\@(.*?)\s";//capturing group between @ and space
 
         public Post(SocialUser author, String text){
@@ -61,7 +51,7 @@ public class SocialUser  {
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(text);
             while(matcher.find()){
-                tags.add(new SocialUser(matcher.group()));
+                tags.add(new SocialUser(matcher.group(1)));
             }
         }
 
@@ -75,7 +65,7 @@ public class SocialUser  {
         SocialUser.Post p = adriana.newPost("Ecco una foto con @Barbara e @Carla.");
         Set<SocialUser> tagged = p.getTagged();
         System.out.println(tagged);
-        System.out.println(tagged. iterator () .next() == barbara);
+        System.out.println(tagged. iterator () .next() == barbara);//TODO: non riconosce che sono uguali per la new a riga 54
         System.out.println(p.getAuthor());
     }
 
