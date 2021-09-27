@@ -324,11 +324,40 @@ a.addEmployee("Jesse", 2008);
 a.addEmployee("Gale", 2009);
 a.addBonus("Gale", 2010, 300);
 
-System.out.println(a.getSalary("Jesse", 2009));
-System.out.println(a.getSalary("Gale", 2010));
-System.out.println(a.getSalary("Gale", 2011));
+System.out.println(a.getSalary("Jesse", 2009));//1150
+System.out.println(a.getSalary("Gale", 2010));//1450
+System.out.println(a.getSalary("Gale", 2011));//1300
 ```
 
+## [Controller](https://github.com/Indisparte/Java-practice/tree/main/JFC/Controller-Incompleto)
+Realizzare la classe Controller, che rappresenta una centralina per autoveicoli, e la classe Function,
+che rappresenta una funzionalità del veicolo, che può essere accesa o spenta. Alcune funzionalità
+sono *incompatibili* tra loro, per cui accenderne una fa spegnere automaticamente l'altra.</br>
+
+La classe Controller ha due metodi: **addFunction** aggiunge al sistema una nuova funzionalità con
+un dato nome; **printOn** stampa a video i nomi delle funzionalità attive. La classe Function ha tre
+metodi: **turnOn** e **turnOff** per attivarla e disattivarla; **setIncompatible** accetta un'altra funzionalità
+x e imposta un'incompatibilità tra this e x.</br>
+
+Leggere attentamente il seguente caso d'uso, che mostra, tra le altre cose, che l'incompatibilità è
+automaticamente simmetrica, ma **non** transitiva.
+
+```java
+Controller c = new Controller();
+Controller .Function ac = c.addFunction("Aria condizionata");
+Controller .Function risc = c.addFunction("Riscaldamento");
+Controller .Function sedile = c.addFunction("Sedile riscaldato");
+
+ac.setIncompatible(risc ) ;
+ac.setIncompatible(sedile ) ;
+ac.turnOn();
+c.printOn();//Aria condizionata
+System.out.println("----");//----
+
+risc .turnOn();
+sedile .turnOn();
+c.printOn();//Sedile riscaldato \n Riscaldamento
+```
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
