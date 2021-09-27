@@ -2,11 +2,11 @@
     "java.project.sourcePaths": [
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
-        "JFC/SocialUser-Incompleto",
         "JFC/Room",
         "JFC/Merge",
+        "JFC/Curriculum.java",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Curriculum.java"
+        "JFC/Progression"
     ]
 }

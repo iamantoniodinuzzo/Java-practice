@@ -245,9 +245,9 @@ System.out.println(c.getPrenotati( Specialista .PEDIATRA));//[]
 ## [MergeIfSorted](https://github.com/Indisparte/Java-practice/tree/main/JFC/mergeIfSorted-Incompleto)
 
 Implementare il metodo statico *mergeIfSorted*, che accetta due liste *a* e *b*, e un comparatore *c*, e
-restituisce un'altra lista. Inizialmente, usando due thread diversi, il metodo verica che le liste
+restituisce un'altra lista. Inizialmente, usando due thread diversi, il metodo verifica che le liste
 a e b siano ordinate in senso non decrescente (ogni thread si occupa di una lista). Poi, se le liste
-sono eettivamente ordinate, il metodo le fonde (senza modicarle) in un'unica lista ordinata,
+sono effettivamente ordinate, il metodo le fonde (senza modicarle) in un'unica lista ordinata,
 che viene restituita al chiamante. Se, invece, almeno una delle due liste non è ordinata, il metodo
 termina restituendo null.</br>
 Il metodo dovrebbe avere complessità di tempo lineare.</br>
@@ -305,6 +305,30 @@ Curriculum.Job j3 = cv.addJob("Cuoco", 2009);
 System.out.println(j2 .next()) ;//Cuoco: 2009
 System.out.println(j3 .next()) ;//null
 ```
+
+## [Progression](https://github.com/Indisparte/Java-practice/tree/main/JFC/Progression)
+Nell'ambito di un programma di gestione del personale, la classe Progression calcola il salario dei
+dipendenti, in base alla loro anzianità in servizio. Il salario mensile parte da un livello base ed ogni
+anno solare aumenta di un certo incremento. Il costruttore accetta il salario base e l'incremento
+annuale. Il metodo **addEmployee** aggiunge un impiegato a questa progressione, specificando il
+nome e l'anno di assunzione. Il metodo **getSalary** restituisce il salario mensile di un impiegato
+in un dato anno. Infine, il metodo **addBonus** attribuisce ad un impiegato un bonus extra in un
+dato anno. Cioè, addBonus("Pippo", 2010, 50) significa che Pippo percepirà 50 euro in più in ogni
+mese del 2010.
+</br>**Caso d'uso**
+
+```java
+Progression a = new Progression(1000, 150);
+
+a.addEmployee("Jesse", 2008);
+a.addEmployee("Gale", 2009);
+a.addBonus("Gale", 2010, 300);
+
+System.out.println(a.getSalary("Jesse", 2009));
+System.out.println(a.getSalary("Gale", 2010));
+System.out.println(a.getSalary("Gale", 2011));
+```
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
