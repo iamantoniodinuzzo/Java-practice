@@ -6,8 +6,9 @@
         "JFC/Progression",
         "JFC/Merge",
         "JFC/Curriculum.java",
+        "JFC/Controller",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Controller"
+        "JFC/Relation"
     ]
 }
