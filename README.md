@@ -398,6 +398,21 @@ c.vote(r) ;
 c.vote(b);
 System.out.println(c.winner());//Red
 ```
+## [inverseMap](https://github.com/Indisparte/Java-practice/tree/main/JFC/inverseMap)
+Implementare il metodo inverseMap che accetta una mappa m e ne restituisce una nuova, ottenuta
+invertendo le chiavi con i valori. Se m contiene valori duplicati, il metodo lancia un'eccezione. Il
+metodo non modifica la mappa m.</br>
+Valutare le seguenti intestazioni per il metodo inverseMap, in base ai criteri di funzionalità,
+completezza, correttezza, fornitura di ulteriori garanzie, semplicità e specificità del tipo di ritorno.
+Infine, scegliere l'intestazione migliore oppure proporne un'altra.
+```java
+/*a)*/ <K,V> Map<V,K> inverseMap(Map<?,?> m)
+/*b)*/ Map<?,?> inverseMap(Map<?,?> m)
+/*c)*/ <K,V> Map<K,V> inverseMap(Map<V,K> m)
+/*d)*/ <K,V> Map<K,V> inverseMap(Map<? extends V, ? super K> m)
+/*e)*/ <K,V> Map<K,V> inverseMap(Map<K,V> m)
+/*f)*/ <K,V> Map<K,V> inverseMap(Map<? extends V, ? extends K> m)
+``` 
 
 <!-- ESERCIZI ELEMENTARI -->
 

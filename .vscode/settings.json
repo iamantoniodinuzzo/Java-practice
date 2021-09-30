@@ -8,8 +8,9 @@
         "JFC/Merge",
         "JFC/Curriculum.java",
         "JFC/Controller",
+        "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Contest"
+        "JFC/inverseMap"
     ]
 }
