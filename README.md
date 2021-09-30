@@ -431,7 +431,27 @@ s .add(14);
 System.out.println(s . size ()) ;//3
 System.out.println(s .contains(3)) ;//false
 ```
-
+## [Movie]()
+La classe **Movie** rappresenta un film, con attributi titolo (stringa) e anno di produzione (intero).
+Alcuni film formano delle serie, cioè sono dei sequel di altri film. La classe offre due costruttori:
+uno per film normali e uno per film appartenenti ad una serie. Quest'ultimo costruttore accetta
+come terzo argomento il film di cui questo è il successore.</br>
+Il metodo **getSeries** restituisce la lista dei film che formano la serie a cui questo film appartiene.
+Se invocato su un film che non appartiene ad una serie, il metodo restituisce una lista contenente
+solo questo film.</br>
+Il metodo statico **selectByYear** restituisce l'insieme dei film prodotti in un dato anno, in tempo
+costante.
+**Esempio d'uso**
+```java
+Movie r1 = new Movie("Rocky", 1976);
+Movie r2 = new Movie("Rocky II", 1979, r1);
+Movie r3 = new Movie("Rocky III", 1982, r2);
+Movie f = new Movie("Apocalypse Now", 1979);
+Set<Movie> movies1979 = Movie.selectByYear(1979);//[Rocky II, Apocalypse Now]
+System.out.println(movies1979);
+List<Movie> rockys = r2.getSeries();
+System.out.println(rockys);//[Rocky, Rocky II, Rocky III]
+```
 
 <!-- ESERCIZI ELEMENTARI -->
 

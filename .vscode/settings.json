@@ -11,7 +11,8 @@
         "JFC/Controller",
         "JFC/Contest",
         "JFC/Bug",
+        "JFC/BoundedSet",
         "JFC/Book&Library",
-        "JFC/BoundedSet"
+        "JFC/Movie"
     ]
 }
