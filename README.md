@@ -378,7 +378,26 @@ Set<Integer> setb = r.preImage("b");
 System.out.println(set0) ;//[b,c]
 System.out.println(setb) ;//[0,1]
 ```
-
+## [Contest](https://github.com/Indisparte/Java-practice/tree/main/JFC/Contest)
+Un oggetto di tipo Contest consente ai client di votare per uno degli oggetti che partecipano a
+un "concorso". Implementare la classe parametrica **Contest** con i seguenti metodi: il metodo **add**
+consente di aggiungere un oggetto al concorso; il metodo **vote** permette di votare per un oggetto;
+se l'oggetto passato a vote non partecipa al concorso (cioè non è stato aggiunto con add), viene
+lanciata un'eccezione; il metodo **winner** restituisce uno degli oggetti che fino a quel momento ha
+ottenuto più voti.</br>
+Tutti i metodi devono funzionare in tempo costante.
+**Caso d'uso**
+```java
+Contest<String> c = new Contest<String>();
+String r = "Red", b = "Blue", g = "Green";
+c.add(r);
+c.vote(r) ;
+c.add(b);
+c.add(g);
+c.vote(r) ;
+c.vote(b);
+System.out.println(c.winner());//Red
+```
 
 <!-- ESERCIZI ELEMENTARI -->
 

@@ -3,12 +3,13 @@
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
         "JFC/Room",
+        "JFC/Relation",
         "JFC/Progression",
         "JFC/Merge",
         "JFC/Curriculum.java",
         "JFC/Controller",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Relation"
+        "JFC/Contest"
     ]
 }

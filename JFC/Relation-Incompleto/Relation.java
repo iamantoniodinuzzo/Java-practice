@@ -27,12 +27,7 @@ public class Relation<S,T>{
      * accetta un oggetto x di tipo S e restituisce l'insieme degli oggetti di tipo T che sono in relazione con x.
      */
     public Set<T> image(S x){
-        Set<S> keys = relations.keySet();
-        Iterator i = keys.iterator();
-        while (i.hasNext()) {
-           System.out.println(i.next());
-        }
-        return images;
+       
         
     }
 
@@ -41,12 +36,7 @@ public class Relation<S,T>{
      */
     public Set<S> preImage(T x){
 
-        Set<S> keys = relations.keySet();
-        Iterator i = keys.iterator();
-        while (i.hasNext()) {
-           System.out.println(i.next());
-        }      
-        return images;
+       
     }
 
     public static void main(String[] args) {
