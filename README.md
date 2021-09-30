@@ -413,6 +413,25 @@ Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 /*e)*/ <K,V> Map<K,V> inverseMap(Map<K,V> m)
 /*f)*/ <K,V> Map<K,V> inverseMap(Map<? extends V, ? extends K> m)
 ``` 
+## [BoundedSet](https://github.com/Indisparte/Java-practice/tree/main/JFC/BoundedSet-Incompleto)
+Realizzare la classe **BoundedSet**, che rappresenta un insieme di capacità limitata. Il costruttore
+accetta la capacità massima dell'insieme. La classe deve implementare i metodi **add**, **contains** e **size**
+secondo il contratto previsto dall'interfaccia Set. Se però l'insieme è alla sua capacità massima e
+si tenta di inserire un nuovo elemento con **add**, prima dell'inserimento sarà cancellato dall'insieme
+l'elemento che vi è stato inserito prima (cioè, l'elemento più "*vecchio*" presente nell'insieme).</br>
+Fare in modo che sia add sia contains funzionino in tempo costante.
+**Esempio d'uso**
+
+```java
+BoundedSet<Integer> s = new BoundedSet<Integer>(3);
+s .add(3); s .add(8); s .add(5); s .add(5);
+System.out.println(s . size ()) ;//3
+System.out.println(s .contains(3)) ;//true
+s .add(14);
+System.out.println(s . size ()) ;//3
+System.out.println(s .contains(3)) ;//false
+```
+
 
 <!-- ESERCIZI ELEMENTARI -->
 

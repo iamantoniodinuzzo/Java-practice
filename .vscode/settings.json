@@ -2,6 +2,7 @@
     "java.project.sourcePaths": [
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
+        "JFC/inverseMap",
         "JFC/Room",
         "JFC/Relation",
         "JFC/Progression",
@@ -11,6 +12,6 @@
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/inverseMap"
+        "JFC/BoundedSet"
     ]
 }
