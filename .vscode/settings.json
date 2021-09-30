@@ -6,6 +6,7 @@
         "JFC/Room",
         "JFC/Relation",
         "JFC/Progression",
+        "JFC/Movie",
         "JFC/Merge",
         "JFC/Curriculum.java",
         "JFC/Controller",
@@ -13,6 +14,6 @@
         "JFC/Bug",
         "JFC/BoundedSet",
         "JFC/Book&Library",
-        "JFC/Movie"
+        "JFC/Movie-Incompleto"
     ]
 }

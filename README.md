@@ -431,7 +431,7 @@ s .add(14);
 System.out.println(s . size ()) ;//3
 System.out.println(s .contains(3)) ;//false
 ```
-## [Movie]()
+## [Movie](https://github.com/Indisparte/Java-practice/tree/main/JFC/Movie-Incompleto)
 La classe **Movie** rappresenta un film, con attributi titolo (stringa) e anno di produzione (intero).
 Alcuni film formano delle serie, cioè sono dei sequel di altri film. La classe offre due costruttori:
 uno per film normali e uno per film appartenenti ad una serie. Quest'ultimo costruttore accetta

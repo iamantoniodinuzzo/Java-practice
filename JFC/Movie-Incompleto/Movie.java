@@ -22,13 +22,25 @@ public class Movie{
         this.titolo = titolo;
         this.anno_di_produzione = anno_di_produzione;
         movies.add(this);
-
-        if(serie == null){
-            serie = new Serie();
+        //se la serie è null questo è il secondo film
+        if(this.serie == null){
+            //crea una nuova serie
+            Serie serie = new Serie();
             serie.addToSerie(film_precedente);
             serie.addToSerie(this);
+            //Aggiungi serie al primo e al sequel
+            film_precedente.setSerie(serie);
+            this.setSerie(serie);
         }else{
-            //TODO: come aggiungere un film ad una serie già iniziata?
+            //se la serie non è null questo film è successivo al secondo
+            //ricava la serie dal precedente film
+            Serie serie = film_precedente.getSerie();
+            //aggiungi questo titolo alla serie
+            serie.addToSerie(this);
+            //Aggiorno la serie
+           // film_precedente.setSerie(serie);
+            this.setSerie(serie);
+
         }
         
     }
@@ -39,6 +51,9 @@ public class Movie{
 
     public Serie getSerie() {
         return serie;
+    }
+    public void setSerie(Serie serie) {
+        this.serie = serie;
     }
 
     public static Set<Movie> selectByYear(int anno){
