@@ -12,9 +12,10 @@
         "JFC/Curriculum.java",
         "JFC/Controller",
         "JFC/Contest",
+        "JFC/City",
         "JFC/Bug",
         "JFC/BoundedSet",
         "JFC/Book&Library",
-        "JFC/City"
+        "JFC/Auditorium"
     ]
 }
