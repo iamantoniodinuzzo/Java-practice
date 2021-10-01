@@ -468,6 +468,24 @@ e semplicità. Inne, scegliere l'intestazione migliore oppure proporne un'altra
 /*d)*/<S, U> Map<S,U> composeMaps(Map<S, ?> a, Map<?, U> b)
 /*e)*/<S, U> Map<S,U> composeMaps(Map<S, Object> a, Map<Object, U> b)
 ```
+
+## [City](https://github.com/Indisparte/Java-practice/tree/main/JFC/City-Incompleto)
+La classe City rappresenta una città. Il costruttore accetta il nome della città, mentre il metodo
+connect accetta un'altra città e stabilisce un collegamento tra le due (una strada o un altro tipo
+di collegamento). Tutti i collegamenti sono bidirezionali.</br>
+Il metodo **getConnections** restituisce la collezione delle città direttamente collegate a questa. Il
+metodo **isConnected** prende come argomento un'altra città e restituisce vero se è collegata a this
+direttamente o indirettamente (cioè, tramite un numero arbitrario di collegamenti).
+```java
+City n = new City("Napoli"), r = new City("Roma"), s = new City
+("Salerno"), p = new City("Parigi");
+n.connect(s);
+n.connect(r);
+Collection<City> r_conn = r.getConnections();
+System.out.println(r_conn);//[Napoli]
+System.out.println(r .isConnected(s));//true
+System.out.println(r .isConnected(p));//false
+```
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
