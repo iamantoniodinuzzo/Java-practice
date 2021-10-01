@@ -452,7 +452,22 @@ System.out.println(movies1979);
 List<Movie> rockys = r2.getSeries();
 System.out.println(rockys);//[Rocky, Rocky II, Rocky III]
 ```
-
+## [ComposeMaps](https://github.com/Indisparte/Java-practice/tree/main/JFC/composeMaps-Incompleto)
+Il metodo composeMaps accetta due mappe a e b, e restituisce una nuova mappa c così denita:
+le chiavi di c sono le stesse di a; il valore associato in c ad una chiave x è pari al valore associato
+nella mappa b alla chiave a(x).</br>
+Nota: Se consideriamo le mappe come funzioni matematiche, la mappa c è definita come c(x) =
+b(a(x)), cioè come composizione di a e b.</br>
+Valutare ciascuna delle seguenti intestazioni per il metodo composeMaps, in base ai criteri di
+funzionalità, completezza, correttezza, fornitura di ulteriori garanzie, specificità del tipo di ritorno
+e semplicità. Inne, scegliere l'intestazione migliore oppure proporne un'altra.</br>
+```java
+/*a)*/<S, T, U> Map<S,U> composeMaps(Map<S, T> a, Map<T, U> b)
+/*b)*/<S, T, U> Map<S,U> composeMaps(Map<S, T> a, Map<? extends T, U> b)
+/*c)*/<S, T, U> Map<S,U> composeMaps(Map<S, T> a, Map<? super T, U> b)
+/*d)*/<S, U> Map<S,U> composeMaps(Map<S, ?> a, Map<?, U> b)
+/*e)*/<S, U> Map<S,U> composeMaps(Map<S, Object> a, Map<Object, U> b)
+```
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
