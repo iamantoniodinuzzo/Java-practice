@@ -508,6 +508,28 @@ return (a.row==b.row)? (a.col􀀀b.col): (a.row􀀀b.row);
 Set<Seat> s = a.assignSeats(4);
 System.out.println(s) ;
 ```
+
+## [SocialNetwork](https://github.com/Indisparte/Java-practice/tree/main/JFC/SocialNetwork)
+Nell'ambito dell'implementazione di un social network, la classe **Person** rappresenta un utente.
+Tramite i metodi **addFriend** e **addEnemy** è possibile aggiungere un amico o un nemico a questa
+persona, rispettando le seguenti regole:</br>
+- una persona non può aggiungere se stessa come amico o nemico;
+- una persona non può aggiungere la stessa persona sia come amico sia come nemico.
+</br>Il metodo **contacts** permette di iterare su tutti i contatti di questa persona tramite un iteratore,
+che restituirà prima tutti gli amici e poi tutti i nemici.</br>
+
+**Esempio d'uso**
+```java
+Person a = new Person("Antonio");
+Person c = new Person("Cleopatra");
+Person o = new Person("Ottaviano");
+a.addEnemy(o);
+a.addFriend(c);
+for (Person p: a.contacts())
+	System.out.println(p);//Cleopatra \n Ottaviano
+```
+
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)

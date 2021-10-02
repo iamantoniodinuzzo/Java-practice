@@ -4,18 +4,13 @@
         "Multithreading/ExecuteInParallel",
         "JFC/inverseMap",
         "JFC/Room",
-        "JFC/Relation",
         "JFC/Progression",
-        "JFC/Movie-Incompleto",
         "JFC/Movie",
         "JFC/Merge",
         "JFC/Curriculum.java",
-        "JFC/Controller",
         "JFC/Contest",
-        "JFC/City",
         "JFC/Bug",
-        "JFC/BoundedSet",
         "JFC/Book&Library",
-        "JFC/Auditorium"
+        "JFC/SocialNetwork"
     ]
 }
