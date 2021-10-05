@@ -552,6 +552,12 @@ Il metodo lancia un'eccezione se le liste non sono di pari lunghezza, oppure se 
 duplicati.
 Si ricordi che non è opportuno utilizzare l'accesso posizionale su liste generiche.
 
+## [Intersect](https://github.com/Indisparte/Java-practice/tree/main/JFC/Intersect)
+Implementare il metodo statico intersect, che accetta come argomenti due **Collection** x e y e
+restituisce una nuova Collection che contiene l'intersezione di x ed y (cioè, gli oggetti comuni ad
+entrambe le collezioni).</br>
+Prestare particolare attenzione alla scelta della firma del metodo.
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)

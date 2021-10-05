@@ -9,10 +9,11 @@
         "JFC/Panino",
         "JFC/Movie",
         "JFC/Merge",
+        "JFC/MakeMap",
         "JFC/Curriculum.java",
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/MakeMap"
+        "JFC/Intersect"
     ]
 }
