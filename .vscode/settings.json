@@ -6,12 +6,13 @@
         "JFC/SocialNetwork",
         "JFC/Room",
         "JFC/Progression",
+        "JFC/Panino",
         "JFC/Movie",
         "JFC/Merge",
         "JFC/Curriculum.java",
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Panino"
+        "JFC/MakeMap"
     ]
 }

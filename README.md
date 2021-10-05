@@ -545,6 +545,13 @@ System.out.println(p);//panino con SALAME, SOTTILETTA
 p.addIngrediente(Panino.Ingrediente.MOZZARELLA);//EXCPETION	
 ```
 
+## [MakeMap](https://github.com/Indisparte/Java-practice/tree/main/JFC/MakeMap)
+Scrivere un metodo che accetta due liste (**List**) **k** e **v** di pari lunghezza, e restituisce una **mappa**
+in cui all'elemento i-esimo di k viene associato come valore l'elemento i-esimo di v.
+Il metodo lancia un'eccezione se le liste non sono di pari lunghezza, oppure se k contiene elementi
+duplicati.
+Si ricordi che non è opportuno utilizzare l'accesso posizionale su liste generiche.
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
