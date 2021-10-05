@@ -10,10 +10,11 @@
         "JFC/Movie",
         "JFC/Merge",
         "JFC/MakeMap",
+        "JFC/Intersect",
         "JFC/Curriculum.java",
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Intersect"
+        "JFC/PartiallyComparable"
     ]
 }

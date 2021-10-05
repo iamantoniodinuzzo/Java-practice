@@ -537,6 +537,7 @@ Elenco delle categorie e degli ingredienti:</br>
 - **formaggi**: SOTTILETTA, MOZZARELLA
 - **salse**: MAIONESE, SENAPE
 </br>**Esempio d'uso**
+
 ```java
 Panino p = new Panino();
 p.addIngrediente(Panino.Ingrediente.SALAME);
@@ -557,6 +558,41 @@ Implementare il metodo statico intersect, che accetta come argomenti due **Colle
 restituisce una nuova Collection che contiene l'intersezione di x ed y (cioè, gli oggetti comuni ad
 entrambe le collezioni).</br>
 Prestare particolare attenzione alla scelta della firma del metodo.
+
+## [PartiallyComparable](https://github.com/Indisparte/Java-practice/tree/main/JFC/PartiallyComparable-Incompleto)
+L'interfaccia **PartComparable** (per partially comparable) rappresenta un tipo i cui elementi sono
+parzialmente ordinati.
+
+```java
+public interface PartComparable<T> {
+public PartComparison compareTo(T x);
+}
+public enum PartComparison {
+SMALLER, EQUAL, GREATER, UNCOMP;
+}
+```
+
+Implementare la classe **POSet** (per partially ordered set ), che rappresenta un insieme parzialmente ordinato, i cui elementi implementano l'interfaccia **PartComparable**.</br> Un oggetto di questo insieme
+è detto massimale se nessun altro oggetto nell'insieme è maggiore di lui.</br>
+Il metodo **add** aggiunge un oggetto all'insieme, mentre il metodo **isMaximal** restituisce vero se
+l'oggetto passato come argomento è uno degli oggetti massimali dell'insieme, restituisce falso se
+tale oggetto appartiene all'insieme, ma non è massimale, ed infine solleva un'eccezione se l'oggetto
+non appartiene all'insieme. Il metodo isMaximal deve terminare in tempo costante.
+```java
+// Stringhe, ordinate parzialmente dalla relazione di presso
+class POString implements PartComparable<POString> { ...
+}
+POSet<POString> set = new POSet<POString>();
+set .add(new POString("architetto"));
+set .add(new POString("archimede"));
+set .add(new POString("archi"));
+set .add(new POString("bar"));
+set .add(new POString("bari"));
+System.out.println(set .isMaximal(new POString("archimede")));//true
+System.out.println(set .isMaximal(new POString("bar")));//false
+set .add(new POString("archimedeo"));
+System.out.println(set .isMaximal(new POString("archimede")));//false
+```
 
 <!-- ESERCIZI ELEMENTARI -->
 
