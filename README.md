@@ -528,7 +528,7 @@ a.addFriend(c);
 for (Person p: a.contacts())
 	System.out.println(p);//Cleopatra \n Ottaviano
 ```
-## [Panino]()
+## [Panino](https://github.com/Indisparte/Java-practice/tree/main/JFC/Panino)
 Implementare la classe Panino, il cui metodo **addIngrediente** aggiunge un ingrediente, scelto da
 un elenco fisso. Gli ingredienti sono divisi in categorie. Se si tenta di aggiungere più di un
 ingrediente della stessa categoria, il metodo addIngrediente solleva un'eccezione.
