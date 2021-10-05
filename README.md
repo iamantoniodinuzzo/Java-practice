@@ -528,7 +528,22 @@ a.addFriend(c);
 for (Person p: a.contacts())
 	System.out.println(p);//Cleopatra \n Ottaviano
 ```
-
+## [Panino]()
+Implementare la classe Panino, il cui metodo **addIngrediente** aggiunge un ingrediente, scelto da
+un elenco fisso. Gli ingredienti sono divisi in categorie. Se si tenta di aggiungere più di un
+ingrediente della stessa categoria, il metodo addIngrediente solleva un'eccezione.
+Elenco delle categorie e degli ingredienti:</br>
+- **ripieni**: PROSCIUTTO, SALAME
+- **formaggi**: SOTTILETTA, MOZZARELLA
+- **salse**: MAIONESE, SENAPE
+</br>**Esempio d'uso**
+```java
+Panino p = new Panino();
+p.addIngrediente(Panino.Ingrediente.SALAME);
+p.addIngrediente(Panino.Ingrediente.SOTTILETTA);
+System.out.println(p);//panino con SALAME, SOTTILETTA
+p.addIngrediente(Panino.Ingrediente.MOZZARELLA);//EXCPETION	
+```
 
 <!-- ESERCIZI ELEMENTARI -->
 

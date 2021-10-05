@@ -3,6 +3,7 @@
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
         "JFC/inverseMap",
+        "JFC/SocialNetwork",
         "JFC/Room",
         "JFC/Progression",
         "JFC/Movie",
@@ -11,6 +12,6 @@
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/SocialNetwork"
+        "JFC/Panino"
     ]
 }
