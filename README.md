@@ -614,6 +614,13 @@ System.out.println( giallo ) ;//(255,255,0)
 System.out.println(verde);//green
 System.out.println(verde == Color.GREEN);//true
 ```
+## [GetByType](https://github.com/Indisparte/Java-practice/tree/main/JFC/GetByType)
+Implementare il metodo statico getByType che, data una collezione c (Collection) ed un oggetto
+x di tipo Class, restituisce un oggetto della collezione il cui tipo effettivo sia esattamente x. Se
+un tale oggetto non esiste, il metodo restituisce null.</br>
+Prestare particolare attenzione alla scelta della firma del metodo. Si ricordi che la classe Class è
+parametrica.
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)

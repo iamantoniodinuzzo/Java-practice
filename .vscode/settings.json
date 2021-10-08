@@ -14,8 +14,9 @@
         "JFC/Intersect",
         "JFC/Curriculum.java",
         "JFC/Contest",
+        "JFC/Color",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/Color"
+        "JFC/GetByType"
     ]
 }
