@@ -593,6 +593,10 @@ System.out.println(set .isMaximal(new POString("bar")));//false
 set .add(new POString("archimedeo"));
 System.out.println(set .isMaximal(new POString("archimede")));//false
 ```
+## [SelectKeys](https://github.com/Indisparte/Java-practice/tree/main/JFC/SelectKeys)
+Scrivere un metodo che accetta una lista *l* e una mappa *m*, e restituisce una nuova lista che
+contiene gli elementi di *l* che compaiono come chiavi in *m*.</br> Porre particolare attenzione alla
+scelta della firma.
 
 <!-- ESERCIZI ELEMENTARI -->
 

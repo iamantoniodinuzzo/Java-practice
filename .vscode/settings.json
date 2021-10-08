@@ -15,6 +15,6 @@
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/PartiallyComparable"
+        "JFC/SelectKeys"
     ]
 }
