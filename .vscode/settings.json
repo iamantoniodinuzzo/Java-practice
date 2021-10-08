@@ -4,6 +4,7 @@
         "Multithreading/ExecuteInParallel",
         "JFC/inverseMap",
         "JFC/SocialNetwork",
+        "JFC/SelectKeys",
         "JFC/Room",
         "JFC/Progression",
         "JFC/Panino",
@@ -15,6 +16,6 @@
         "JFC/Contest",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/SelectKeys"
+        "JFC/Color"
     ]
 }

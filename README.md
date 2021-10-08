@@ -598,6 +598,22 @@ Scrivere un metodo che accetta una lista *l* e una mappa *m*, e restituisce una 
 contiene gli elementi di *l* che compaiono come chiavi in *m*.</br> Porre particolare attenzione alla
 scelta della firma.
 
+## [Color](https://github.com/Indisparte/Java-practice/tree/main/JFC/Color)
+La classe **Color** rappresenta un colore, determinato dalle sue componenti RGB. La classe offre
+alcuni colori predefiniti, tra cui **RED**, **GREEN** e **BLUE**. Un colore nuovo si può creare solo con
+il metodo factory make. Se il client cerca di ricreare un colore predefinito, gli viene restituito
+quello e non uno nuovo.</br> Ridefinire anche il metodo toString, in modo che rispetti il seguente caso
+d'uso.
+```java
+Color rosso = Color.RED;
+Color giallo = Color.make(255, 255, 0);
+Color verde = Color.make(0, 255, 0);
+
+System.out.println(rosso) ;//red
+System.out.println( giallo ) ;//(255,255,0)
+System.out.println(verde);//green
+System.out.println(verde == Color.GREEN);//true
+```
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
