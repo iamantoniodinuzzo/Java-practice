@@ -12,11 +12,12 @@
         "JFC/Merge",
         "JFC/MakeMap",
         "JFC/Intersect",
+        "JFC/GetByType",
         "JFC/Curriculum.java",
         "JFC/Contest",
         "JFC/Color",
         "JFC/Bug",
         "JFC/Book&Library",
-        "JFC/GetByType"
+        "Esercizi elementari/Cartella-Non completo"
     ]
 }

@@ -677,6 +677,24 @@ System.out.println(c.carPasses("NA12345", 1320));//120
 // 4km in 180 sec (3 minuti), quindi 80km/h
 System.out.println(c.carPasses("SA00001", 1380));//80
 ```
+## [Cartella](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Cartella)
+Realizzare la classe Cartella, che rappresenta una cartella nella Tombola. Una cartella contiene 15 numeri casuali diversi, compresi tra 1 e 90, disposti in 3 righe di 5 numeri, rispettando laseguente regola:
+- una riga non può contenere due numeri della stessa decina; ad esempio, una riga può contenere 9 e 11, ma non 11 e 13.
+
+Il metodo segna accetta il prossimo numero estratto, e controlla se questa cartella ha ottenuto
+un premio, restituendo null, oppure un valore enumerato che rappresenta uno dei premi della
+Tombola: AMBO, TERNO, QUATERNA, CINQUINA, TOMBOLA (implementare anche questa
+enumerazione).
+
+L'implementazione deve rispettare il seguente esempio d'uso: (*Essendo numeri randomici, improbabile ricreare il seguente caso d'uso. Nel mio svolgimento i numeri da segnare sono anch'essi randomici.*)
+```java
+Cartella c = new Cartella();
+System.out.println(c.segna(1));
+System.out.println(c.segna(2));
+System.out.println(c.segna(12));
+System.out.println(c.segna(22));
+System.out.println(c.segna(82));
+```
 <!-- CLASSI INTERNE -->
 
 # [Classi interne](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne)
