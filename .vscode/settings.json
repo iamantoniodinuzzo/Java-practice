@@ -13,12 +13,13 @@
         "JFC/MakeMap",
         "JFC/Intersect",
         "JFC/GetByType",
+        "JFC/GameLevel-Incompleto",
         "JFC/Curriculum.java",
         "JFC/Contest",
         "JFC/Color",
         "JFC/Bug",
         "JFC/Book&Library",
         "Esercizi elementari/Cartella-Non completo",
-        "JFC/GameLevel-Incompleto"
+        "Esercizi elementari/Question&Answer"
     ]
 }

@@ -695,6 +695,22 @@ System.out.println(c.segna(12));
 System.out.println(c.segna(22));
 System.out.println(c.segna(82));
 ```
+
+## [Answer&Question](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Answer&Question)
+Per un sito di domande e risposte, realizzare le classi **Question** e **Answer**. Ogni risposta è associata ad un'unica domanda e gli utenti possono votare la risposta migliore invocando il metodo *voteUp* di Answer. Inoltre, il metodo *getBestAnswer* restituisce in tempo costante la risposta (o una delle risposte) che ha ottenuto il maggior numero di voti.
+
+Rispettare il seguente caso d'uso.
+```java
+Question q = new Question("Dove si trova Albuquerque?");
+Answer a1 = new Answer(q, "Canada");
+Answer a2 = new Answer(q, "New Mexico");
+a1.voteUp();
+System.out.println(q.getBestAnswer());//Canada
+a2.voteUp();
+a2.voteUp();
+System.out.println(q.getBestAnswer());//New Mexico
+```
+
 <!-- CLASSI INTERNE -->
 
 # [Classi interne](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne)
