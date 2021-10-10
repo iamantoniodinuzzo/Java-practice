@@ -1,5 +1,6 @@
 <center><h1>Esercizi di Java Avanzato!<h1></center>
 
+## Table of contents
 <!-- TABLE OF CONTENTS -->
   <ul>
     <li><a href="#java-collection-framework">Java Collection Framework</a></li>
