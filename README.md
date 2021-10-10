@@ -1,7 +1,6 @@
-
+<center><h1>Esercizi di Java Avanzato!<h1></center>
 
 <!-- TABLE OF CONTENTS -->
-  ## Table of Contents
   <ul>
     <li><a href="#java-collection-framework">Java Collection Framework</a></li>
     <li><a href="#esercizi-elementari">Esercizi elementari</a></li>
@@ -16,12 +15,11 @@
 
 <!-- ABOUT THE PROJECT -->
 
-# About The Project
-<p>Questa repository &egrave; un insieme di esercizi inerenti al miglior utilizzo del linguaggio java.</p>
-<p>Di seguito troverai ogni repository con all'interno le rispettive tracce e i link agli svolgimenti (<em>in corso</em>) di ogni esercizio relativo all'argomento del capitolo.</p>
-<blockquote>
-<p>I contributi e le segnalazioni sono ben accolte.</p>
-</blockquote>
+## About The Project
+Questa repository è stata creata con l'intento di esercitarmi e di rendere lo svolgimento degli esercizi disponibile per tutti sia per confronto, sia per chi non ha voglia di pensare troppo allo svolgimento sia per me per ricevere delle correzioni.
+
+> _Copiare da uno è plagio, copiare da molti è ricerca_
+> 
 
 <!-- JAVA COLLECTION FRAMEWORK -->
 
