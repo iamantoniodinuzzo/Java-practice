@@ -1,89 +1,106 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class GameLevel {
-    private int larghezza, altezza;
-    private Set<Wall> walls = new HashSet<>();
+    private HashSet<Cell> level;
 
-    public GameLevel(int larghezza, int altezza ){
-        this.larghezza = larghezza;
+    private int altezza, larghezza;
+
+    public GameLevel(int larghezza, int altezza) {
         this.altezza = altezza;
-    }
-    
-    /**
-     * Accetta le coordinate di una casella e mette un muro in quella casella
-     * @param larghezza
-     * @param altezza
-     */
-    public void setWall(int horizontal_position, int vertical_position){
-        if(horizontal_position > larghezza || vertical_position > altezza) throw new IllegalArgumentException();
-
-        walls.add(new Wall(horizontal_position, vertical_position));
+        this.larghezza = larghezza;
+        this.level = new HashSet<>();
+        createLevel();
     }
 
-    public boolean areConnected(int horizontal_c_1, int vertical_c_1, int horizontal_c_2, int vertical_c_2){
+    public void setWall(int larghezza, int altezza) {
+        Cell cell_wall = new Cell(larghezza, altezza);
+        for (Cell cell : level) {
+            if(cell.equals(cell_wall))
+                cell.setWall(true);
+        }
+    }
 
-       if((horizontal_c_1 == horizontal_c_2) && (vertical_c_1 == vertical_c_2)){//sono sulla stessa casella
-            return true;
-       }else if(vertical_c_1 == vertical_c_2){//sono sulla stessa colonna
-            int start, end;
-
-            if(horizontal_c_1 > horizontal_c_2){
-             start = horizontal_c_2;
-             end = horizontal_c_1;
-            }else{
-                start = horizontal_c_1;
-                end = horizontal_c_2;
-            }
-
-            for(int i = start; i< end; i++){
-                if(walls.contains(new Wall(i, vertical_c_1))) return false;
-            }
-        return true;
-
-       }else if (horizontal_c_1 == horizontal_c_2){//sono sulla stessa riga
-            int start, end;
-
-            if(vertical_c_1 > vertical_c_2){
-                start = vertical_c_2;
-                end = vertical_c_1;
-            }else{
-                start = vertical_c_1;
-                end = vertical_c_2;
-            }
-
-            for(int i = start; i< end; i++){
-                if(walls.contains(new Wall(i, horizontal_c_1))) return false;
-            }
-        return true;
-       }else{
-           
-       }
+    public boolean areConnected(int l_c1, int a_c1, int l_c2, int a_c2) {
         return false;
     }
 
-   
+    private void createLevel() {
+        for (int i = 0; i < larghezza; i++) {
+            for (int j = 0; j < altezza; j++) {
+                level.add(new Cell(i, j));
+            }
+        }
+    }
 
-    private class Wall{
-        private int position_h, position_v;
+    public String toString(){
+        String result = "Game Level\n";
+        for (int i = 0; i < altezza; i++) {
+            for (Cell cell : level) {
+                if (cell.getCoordinata_y() == i) {
+                    result+=cell;
+                }
+            }
+            result += "\n";
+        }
+        return result;
+    }
 
-        public Wall(int l, int a){
-            this.position_h = l;
-            this.position_v = a;
+    private class Cell {
+        private int coordinata_x, coordinata_y;
+        private boolean wall;
+
+        public Cell(int coordinata_x, int coordinata_y) {
+            this.wall = false;
+            this.coordinata_x = coordinata_x;
+            this.coordinata_y = coordinata_y;
+
         }
 
-        public int getHorizontalPosition(){return position_h;}
-        public int getVerticalPosition(){return position_v;}
-
-        public boolean equals(Object obj){
-            if(!(obj instanceof Wall))return false;
-
-            Wall w = (Wall) obj;
-
-            return (this.position_h == w.getHorizontalPosition())&&(this.position_v == w.getVerticalPosition());
+        public int getCoordinata_x() {
+            return coordinata_x;
         }
 
-        public int hashCode(){return position_h ^ position_v;}
+        public int getCoordinata_y() {
+            return coordinata_y;
+        }
+
+        public boolean isWall() {
+            return wall;
+        }
+
+        public void setWall(boolean wall) {
+            this.wall = wall;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            if(!(obj instanceof Cell)) return false;
+
+            Cell c = (Cell) obj;
+
+           return c.getCoordinata_x() == this.coordinata_x && c.getCoordinata_y() == this.coordinata_y;
+        }
+
+        @Override
+        public int hashCode() {
+            return coordinata_x ^ coordinata_y;
+        }
+
+        @Override
+        public String toString(){
+            return (this.isWall())?"| x |":"|   |";
+        }
+    }
+
+    public static void main(String[] args) {
+        GameLevel map = new GameLevel(3, 3);
+        
+        System.out.println(map.areConnected(0,0,2,2));
+        map.setWall(0,1);
+        map.setWall(1,1);
+        System.out.println(map.areConnected(0,0,2,2);
+        map.setWall(2,1);
+        System.out.println(map.areConnected(0,0,2,2));
 
     }
 }
