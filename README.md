@@ -29,7 +29,7 @@ Questa repository è stata creata con l'intento di esercitarmi e di rendere lo s
 <a href="#table-of-contents">Back to top</a>
 </p>
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [Library](https://github.com/Indisparte/Java-practice/tree/main/JFC/Library)
 Realizzare per una biblioteca le classi **Library** e **Book**. Un oggetto **Book** è caratterizzato dal suo titolo. La classe Library offre le seguenti funzionalità:
@@ -632,7 +632,7 @@ parametrica.
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [Triangolo](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Triangolo)
 Nell'ambito di un programma di geometria, si implementi la classe **Triangolo**, il cui costruttore
@@ -726,7 +726,7 @@ System.out.println(q.getBestAnswer());//New Mexico
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 
 ## [Washer](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne/Washer)
@@ -781,7 +781,7 @@ System.out.println(i3) ;//(5,20]
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [Time](https://github.com/Indisparte/Java-practice/blob/main/Criterio%20di%20ordinamento%20tra%20oggetti/Time)
 Implementare la classe Time, che rappresenta un orario della giornata (dalle 00:00:00 alle 23:59:59).
@@ -807,7 +807,7 @@ System.out.println(t3.compareTo(Time.MIDDAY)); //-1
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [BinaryTreePreIterator](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/BinaryTreePreIterator)
 Il seguente frammento di classe definisce un nodo in un albero binario.
@@ -853,7 +853,7 @@ for (Integer i : Primes.iterable ) {
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [Fraction](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti/Fraction)
 
@@ -918,7 +918,7 @@ y.other.val.</li>
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [isMax](https://github.com/Indisparte/Java-practice/blob/main/Scelta%20della%20firma/isMax)
 Il metodo isMax accetta un oggetto x, un comparatore ed un insieme di oggetti, e restituisce
@@ -946,7 +946,7 @@ l'intestazione migliore oppure proporne un'altra, motivando brevemente la propri
 </p>
 
 <details>
-	<summary>Clicca per espandere</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [delayIterator](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/delayIterator.java)
 Implementare un metodo statico delayIterator che prende come argomenti un iteratore i ed un
@@ -1109,7 +1109,7 @@ esaurire tutto l'array.
 </p>
 
 <details>
-	<summary>Clicca per espandere!</summary>
+	<summary>Clicca per espandere !</summary>
 
 ## [2008-3-27](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante/2008-3-27)
 La seguente classe A fa riferimento ad una classe B. Implementare la classe B in modo che venga
