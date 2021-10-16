@@ -12,6 +12,7 @@
         "JFC/Merge",
         "JFC/MakeMap",
         "JFC/Library2",
+        "JFC/Library",
         "JFC/Intersect",
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
@@ -22,6 +23,6 @@
         "JFC/Book&Library",
         "Esercizi elementari/Question&Answer",
         "Esercizi elementari/Cartella-Non completo",
-        "JFC/Library"
+        "Scelta della firma"
     ]
 }
