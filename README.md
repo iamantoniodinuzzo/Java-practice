@@ -916,27 +916,7 @@ y.other.val.</li>
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
-
-<details>
-	<summary>Clicca per espandere !</summary>
-
-## [isMax](https://github.com/Indisparte/Java-practice/blob/main/Scelta%20della%20firma/isMax)
-Il metodo isMax accetta un oggetto x, un comparatore ed un insieme di oggetti, e restituisce
-true se, in base al comparatore, x è maggiore o uguale di tutti gli oggetti contenuti nell'insieme.
-	Altrimenti, il metodo restituisce false.</br>
-Valutare ciascuna delle seguenti intestazioni per il metodo isMax, in base ai criteri di funzionalit
-à, completezza, correttezza, fornitura di ulteriori garanzie e semplicità. Infine, scegliere
-l'intestazione migliore oppure proporne un'altra, motivando brevemente la propria scelta.
-```java
-/*a)*/ boolean isMax(Object x, Comparator<Object> c, Set<Object> s)
-/*b)*/ <T> boolean isMax(T x, Comparator<T> c, Set<T> s)
-/*c)*/ <T> boolean isMax(T x, Comparator<? super T> c, Set<T> s)
-/*d)*/ <T> boolean isMax(T x, Comparator<? extends T> c, Set<? super T> s)
-/*e)*/ <T> boolean isMax(T x, Comparator<? super T> c, Set<? super T> s)
-/*f)*/ <S,T extends S> boolean isMax(T x, Comparator<? super S> c, Set<S> s)
-```
-
-</details>
+Visitare la cartella linkata nel titolo della sezione per visualizzare gli svolgimenti.
 
 <!-- MULTITHREADING -->
 
