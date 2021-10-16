@@ -11,6 +11,7 @@
         "JFC/Movie",
         "JFC/Merge",
         "JFC/MakeMap",
+        "JFC/Library2",
         "JFC/Intersect",
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
@@ -19,7 +20,8 @@
         "JFC/Color",
         "JFC/Bug",
         "JFC/Book&Library",
+        "Esercizi elementari/Question&Answer",
         "Esercizi elementari/Cartella-Non completo",
-        "Esercizi elementari/Question&Answer"
+        "JFC/Library"
     ]
 }

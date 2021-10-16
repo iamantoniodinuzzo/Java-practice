@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Library {
+class Library{
 
     private Set<Book> library;
     private LinkedList<Book> lentBooks = new LinkedList<>();

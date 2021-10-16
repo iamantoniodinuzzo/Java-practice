@@ -28,6 +28,8 @@ Questa repository è stata creata con l'intento di esercitarmi e di rendere lo s
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [Library](https://github.com/Indisparte/Java-practice/tree/main/JFC/Library)
 Realizzare per una biblioteca le classi **Library** e **Book**. Un oggetto **Book** è caratterizzato dal suo titolo. La classe Library offre le seguenti funzionalità:
@@ -620,12 +622,17 @@ un tale oggetto non esiste, il metodo restituisce null.</br>
 Prestare particolare attenzione alla scelta della firma del metodo. Si ricordi che la classe Class è
 parametrica.
 
+</details>
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
+
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [Triangolo](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Triangolo)
 Nell'ambito di un programma di geometria, si implementi la classe **Triangolo**, il cui costruttore
@@ -709,6 +716,7 @@ a2.voteUp();
 a2.voteUp();
 System.out.println(q.getBestAnswer());//New Mexico
 ```
+</details>
 
 <!-- CLASSI INTERNE -->
 
@@ -716,6 +724,9 @@ System.out.println(q.getBestAnswer());//New Mexico
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
+
+<details>
+	<summary>Clicca per espandere</summary>
 
 
 ## [Washer](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne/Washer)
@@ -759,6 +770,9 @@ System.out.println(i1) ;//(5,10,5)
 System.out.println(i2) ;//[7,20]
 System.out.println(i3) ;//(5,20]
 ```
+
+</details>
+
 <!-- CRITERI DI ORDINAMENTO-->
 
 # [Criterio di ordinamento tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Criterio%20di%20ordinamento%20tra%20oggetti)
@@ -766,6 +780,8 @@ System.out.println(i3) ;//(5,20]
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [Time](https://github.com/Indisparte/Java-practice/blob/main/Criterio%20di%20ordinamento%20tra%20oggetti/Time)
 Implementare la classe Time, che rappresenta un orario della giornata (dalle 00:00:00 alle 23:59:59).
@@ -781,6 +797,7 @@ System.out.println(t3) ; //7:24:30
 System.out.println(t3.compareTo(t2)); //1
 System.out.println(t3.compareTo(Time.MIDDAY)); //-1
 ```
+</details>
 
 <!-- ITERATORI E CICLO FOR EACH -->
 
@@ -789,6 +806,8 @@ System.out.println(t3.compareTo(Time.MIDDAY)); //-1
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [BinaryTreePreIterator](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/BinaryTreePreIterator)
 Il seguente frammento di classe definisce un nodo in un albero binario.
@@ -823,11 +842,18 @@ for (Integer i : Primes.iterable ) {
 	System.out.println( i ) ;
 }
 ```
+
+</details>
+
+<!-- UGUAGLIANZA TRA OGGETTI  -->
+
 # [Uguaglianza tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [Fraction](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti/Fraction)
 
@@ -881,12 +907,18 @@ y.other.val.</li>
 
 - Dire quali specifiche sono valide e perché. (20 punti)
 - Implementare la specifica (4). (10 punti)
+
+</details>
 	
+<!-- SCELTA DELLA FIRMA-->
+
 # [Scelta della firma](https://github.com/Indisparte/Java-practice/tree/main/Scelta%20della%20firma)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [isMax](https://github.com/Indisparte/Java-practice/blob/main/Scelta%20della%20firma/isMax)
 Il metodo isMax accetta un oggetto x, un comparatore ed un insieme di oggetti, e restituisce
@@ -1081,3 +1113,4 @@ public class A extends B {
 		}
 }
 ```
+</details>
