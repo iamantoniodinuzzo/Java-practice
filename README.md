@@ -935,11 +935,18 @@ l'intestazione migliore oppure proporne un'altra, motivando brevemente la propri
 /*e)*/ <T> boolean isMax(T x, Comparator<? super T> c, Set<? super T> s)
 /*f)*/ <S,T extends S> boolean isMax(T x, Comparator<? super S> c, Set<S> s)
 ```
+
+</details>
+
+<!-- MULTITHREADING -->
+
 # [Multithreading](https://github.com/Indisparte/Java-practice/tree/main/Multithreading)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<details>
+	<summary>Clicca per espandere</summary>
 
 ## [delayIterator](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/delayIterator.java)
 Implementare un metodo statico delayIterator che prende come argomenti un iteratore i ed un
@@ -1092,11 +1099,17 @@ In altre parole, all'inizio il metodo fa partire i primi k Runnable dell'array. 
 dei Runnable in esecuzione termina, il metodo ne fa partire un altro, preso dall'array, no ad
 esaurire tutto l'array.
 
+</details>
+
+<!-- CLASSE MANCANTE -->
+
 # [Classe mancante](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<details>
+	<summary>Clicca per espandere!</summary>
 
 ## [2008-3-27](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante/2008-3-27)
 La seguente classe A fa riferimento ad una classe B. Implementare la classe B in modo che venga
