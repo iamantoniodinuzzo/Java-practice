@@ -135,3 +135,72 @@ Il metodo statico **makeMap** accetta una lista di chiavi e una lista di valori 
     }
 ```
 
+<!--  -->
+## greatestLowerBound
+Implementare il metofo gLB (per *greatestLowerBound*), che accetta due insiemi A e B, e un comparatore e restituisce il più grande di A che è più piccolo di tutti gli elementi di B. Se un tale elemento non esiste, il metodo restituisce *null*.
+```java
+<T> T gtLB(Set<? extends T> a, Set<? extends T> b, Comparator<T> c);
+```
+* **Funzionale**
+* **Corretta**
+* **Completa**
+* **Ulteriori garanzie** fornite sono l'immodificabilità dei due set su cui non è possibile invocare il metodo add.
+* **Semplice** in quanto presenta un unico parametro.
+* **Specificità del tipo di ritorno** alta.
+
+```java
+<S,T> Object gLB(Set<S> a, Set<T> b, Comparator<Object> c);
+```
+* **Non funzionale** in quanto ilcomparator non può essere utilizzato.
+
+```java
+<T> T gLB(Set<T> a, Set<T> b, Comparator<? super T> c);
+```
+* **Funzionale**
+* **Corretta**
+* **Non completa** in quanto accetta solo insiemi dello stesso tipo.
+* **Specificità del tipo di ritorno** alta.
+* **Semplice**
+
+```java
+<S, T extends S> S gLB(Set<S> a, Set<T> b, Comparator<S> c);
+```
+* **Funzionale**
+* **Corretta**
+* **Non completa** in quanto non posso passare come primo parametro un insieme a di sottoclassi di S.
+* **Specificità del tipo di ritorno** alta.
+
+```java
+<T> t gLB(Set<? super T> a, Set<? super T>, Comparator<T> c );
+```
+* **Non funzionale** in quanto non è possibile leggere gli insiemi.
+### Firma Migliore 
+```java
+ public static <T> T gLB(Set<? extends T> a, Set<? extends T> b, Comparator<? super T> c) {
+
+        // Converto entrambi gli insiemi in ArrayList in modo da poter ordinare con il
+        // metodo sort
+        ArrayList<T> a_rray = new ArrayList<>(a);
+        ArrayList<T> b_rray = new ArrayList<>(b);
+        Collections.sort(a_rray, c);
+        Collections.sort(b_rray, c);
+        // Prelevo l'ultimo elemento di a_rray e b_rray (i più grandi)
+        T bigger_a = a_rray.get(a_rray.size() - 1);
+        T bigger_b = b_rray.get(b_rray.size() - 1);
+        // Se i due bigger sono uguali, li rimuovo dalla lista e recupero di nuovo
+        // l'ultimo elemento
+        if (c.compare(bigger_a, bigger_b) == 0) {
+            a_rray.remove(bigger_a);
+            bigger_a = a_rray.get(a_rray.size() - 1);
+            b_rray.remove(bigger_b);
+            bigger_b = b_rray.get(b_rray.size() - 1);
+        }
+        // Se bigger_b è maggiore di bigger_a, restiuisco bigger_a altrimenti null
+        if (c.compare(bigger_a, bigger_b) < 0)
+            return bigger_a;
+
+        return null;
+
+    }
+```
+
