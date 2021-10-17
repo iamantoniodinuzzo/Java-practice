@@ -189,14 +189,16 @@ Implementare il metofo gLB (per *greatestLowerBound*), che accetta due insiemi A
         T bigger_b = b_rray.get(b_rray.size() - 1);
         // Se i due bigger sono uguali, li rimuovo dalla lista e recupero di nuovo
         // l'ultimo elemento
-        if (c.compare(bigger_a, bigger_b) == 0) {
+        while(c.compare(bigger_a, bigger_b) == 0 && a_rray.size() >0 && b_rray.size() > 0) {
             a_rray.remove(bigger_a);
+            bigger_a = null;
             bigger_a = a_rray.get(a_rray.size() - 1);
             b_rray.remove(bigger_b);
+            bigger_b = null;
             bigger_b = b_rray.get(b_rray.size() - 1);
         }
         // Se bigger_b è maggiore di bigger_a, restiuisco bigger_a altrimenti null
-        if (c.compare(bigger_a, bigger_b) < 0)
+        if ((bigger_a != null && bigger_b != null) && c.compare(bigger_a, bigger_b) < 0)
             return bigger_a;
 
         return null;
@@ -204,3 +206,65 @@ Implementare il metofo gLB (per *greatestLowerBound*), che accetta due insiemi A
     }
 ```
 
+## isIncreasing
+Il metodo statico **isIncreasing** accetta una mappa e un comparatore, e restituisce vero se e solo se ciascuna chiave è minore o uguale del valore ad essa associato.
+```java
+<K,V> boolean isIncreasing(Map<K,V> m, Comparator<K> c);
+```
+* Corretta
+* Compelta
+* Non funzionale in quanto non posso comparare K e V.
+
+```java
+<K,V> boolean isIncreasing(Map<K,V> m, Comparator<? super K> c);
+```
+* Corretta
+* Completa 
+* Ulteriori garanzie fornite dal comparator in quanto accetta solo comparator di superclassi di K
+* Non Funzionale in quanto non posso comparare K e V perchè V non è confrontabile con K
+
+```java
+<K,V extends K> boolean isIncreasing(Map<K,V> m, Comparator<? super K> c);
+```
+* Corretta
+* Completa
+* Ulteriori garanzie fornite dal comparator e dal tipo di valore assunto dalla map, più nello specifico la map può avere come valore solo le sottoclassi di K.
+* Funzionale
+
+```java
+<T> boolean isIncreasing(Map<T,T> m, Comparator<T> c);
+```
+* Corretta
+* Non completa in quanto non posso passare come argomento una Map che abbia le chiavi diverse dai valori o viceversa.
+* Funzionale
+
+```java
+<T> boolean isIncreasing(Map<T,T> m, Comparator<? extends T> c);
+```
+* Non funzionale
+
+```java
+<T> boolean isIncreasing(Map<? extends T, ? extends T> m, Comaprator<T> c);
+```
+* Corretta
+* Completa
+* Funzionale
+* Ulteriori garanzie fornite sono l'impossibilità di richiamare il metodo put di map
+* Semplicità della firma
+* Specificità del tipo di ritorno
+
+```java
+boolean isIncreasing(Map<?,?> m, Comparator<?> c);
+```
+* Non funzionale
+### Miglior firma
+```java
+ public static <T> boolean isIncreasing(Map< ? extends T, ? extends T> m, Comparator<? super T> c){
+        
+        for (Map.Entry<? extends T,? extends T> entry : m.entrySet()) {
+            if(c.compare(entry.getKey(), entry.getValue()) > 0)
+                return false;
+        }
+        return true;
+    }
+```
