@@ -194,7 +194,7 @@ public class Test {
 `beta . f (beta, beta, beta)`; **Candidate**: B1, A1; **Specifica**: A1</br>
 `gamma . f (alfa, null, beta)`; **Candidate**: C1, B1, A1; **Specifica**: C1
 
-## Output
+### Output
 C2</br>
 A1</br>
 C1
@@ -253,9 +253,9 @@ public class Test {
     }
 }
 ```
-## Firme candidate e specifica
+### Firme candidate e specifica
 `alfa . f ( alfa , beta, beta)`; **Candidate**: A1; **Specifica**:A1 </br>
 `alfa . f (beta, alfa , null)`; **Candidate** : A1; **Specifica**: A1</br>
 `beta. f (beta, beta, beta)`; **Candidate**: B1, A1; **Specifica**: B1</br>
-## Output
+### Output
 B1+B2</br>B1+B2</br>B1 + B2</br> true
