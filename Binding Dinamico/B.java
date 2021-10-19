@@ -1,4 +1,4 @@
 public class B extends A {
-    public String f(B a, B b) { return "B1 + " + f(a, (A)b); }
-    public String f(A a, B b) { return "B2"; }
+    public String f(Object x, A y, B z) { return "B1 + " + f(null, z, new B()); }
+    private String f(B x, B y, B z) { return "B2"; }
 }

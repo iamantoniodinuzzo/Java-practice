@@ -1,4 +1,0 @@
-alfa . f (beta, gamma); firme candidate A1,A2,B1; più specifica A2; output "A2"
-beta . f (beta, beta); firme candidate B1,C1,C2; più specifica B1; output "B1 + B2"
-gamma. f (alfa, null); firme candidate C2,C1,B1,A2; più specifica A2; output "A2";
-beta instanceof A; firme candidate nessuna; output true;

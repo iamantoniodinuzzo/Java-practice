@@ -1,3 +1,0 @@
-alfa . f (beta, null); firme candidate A1,A2,B1,B2; più specifica A2; output "B2";
-beta . f (beta, beta); firme candidate B1,B2,A2,A1; più specifica B1; output "B1 + A1"
-beta . f (alfa, null); firme candidate B1,B2;A2,A1; più specifica B2; output "B2"

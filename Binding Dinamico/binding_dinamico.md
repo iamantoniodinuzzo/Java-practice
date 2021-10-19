@@ -164,3 +164,98 @@ B2</br>
 B1 + A1</br>
 B2
 
+## 2018-6-20
+```java
+class A {
+    public String f(Object x, A y, B z) { return "A1"; }
+    public String f(A x, C y, C z) { return "A2"; }
+}
+class B extends A {
+    public String f (Object x, A y, A z) { return "B1 + " + f(null, new B(), y); }
+    private String f(A x, B y, B z) { return "B2"; }
+}
+class C extends B {
+    public String f(A x, A y, B z) { return "C1"; }
+    public String f(A x, C y, C z) { return "C2"; }
+}
+public class Test {
+    public static void main(String[] args) {
+        C gamma = new C();
+        B beta = gamma;
+        A alfa = gamma;
+        System.out.println( alfa . f (beta, gamma, gamma));
+        System.out.println(beta. f (beta, beta, beta));
+        System.out.println(gamma.f(alfa, null, beta));
+    }
+}
+```
+### Firme candidate e più specifica
+`alfa . f (beta, gamma, gamma)`; **Candidate**: A1, A2; **Specifica**: A2</br>
+`beta . f (beta, beta, beta)`; **Candidate**: B1, A1; **Specifica**: A1</br>
+`gamma . f (alfa, null, beta)`; **Candidate**: C1, B1, A1; **Specifica**: C1
+
+## Output
+C2</br>
+A1</br>
+C1
+
+## 2018-5-2
+```java
+class A {
+    public String f(Object a, A b) { return "A1"; }
+    public String f(A a, C b) { return "A2"; }
+}
+class B extends A {
+    public String f (Object a, A b) { return "B1 + " + f(null, new B()); }
+    private String f(A a, B b) { return "B2"; }
+}
+class C extends B {
+    public String f(Object a, B b) { return "C1"; }
+    public String f(A a, B b) { return "C2"; }
+}
+public class Test {
+    public static void main(String[] args) {
+        C gamma = new C();
+        B beta = gamma;
+        A alfa = gamma;
+        System.out.println( alfa . f (beta, gamma));
+        System.out.println(beta. f (beta, beta));
+        System.out.println(gamma.f(alfa, null));
+        System.out.println(beta instanceof A);
+    }
+}
+```
+### Firme candidate e più specifica
+`alfa . f (beta, gamma)`; **Candidate**: A1, A2; **Specifica**: A2;</br>
+`beta.f(beta, beta)`; **Candidate**: B1, A1; **Specifica**: B1</br>
+`gamma.f(alfa, null)`; **Candidate**: C2, C1, B1, A2, A1; **Specifica**: A2</br>
+### Output
+A2</br>B1+B2</br>A2</br>true
+
+## 2018-3-23
+```java
+class A {
+    public String f (Object x, A y, B z) { return "A1"; }
+    private String f(A x, B y, A z) { return "A2"; }
+}
+class B extends A {
+    public String f(Object x, A y, B z) { return "B1 + " + f(null, z, new B()); }
+    private String f(B x, B y, B z) { return "B2"; }
+}
+public class Test {
+    public static void main(String[] args) {
+        B beta = new B();
+        A alfa = (A) beta;
+        System.out.println( alfa . f ( alfa , beta, beta));
+        System.out.println( alfa . f (beta, alfa , null)) ;
+        System.out.println(beta. f (beta, beta, beta));
+        System.out.println( alfa instanceof B);
+    }
+}
+```
+## Firme candidate e specifica
+`alfa . f ( alfa , beta, beta)`; **Candidate**: A1; **Specifica**:A1 </br>
+`alfa . f (beta, alfa , null)`; **Candidate** : A1; **Specifica**: A1</br>
+`beta. f (beta, beta, beta)`; **Candidate**: B1, A1; **Specifica**: B1</br>
+## Output
+B1+B2</br>B1+B2</br>B1 + B2</br> true

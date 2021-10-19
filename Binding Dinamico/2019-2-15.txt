@@ -1,3 +1,0 @@
-beta.f(gamma, array); firme candidate B3,B2,B1, C1; più specifica B1; output "B1:B2";
-gamma.f(beta,null); firme candidate C1, B2; più specifica C1; output "C1";
-beta.f(array[0],null); firme candidate B2,C1; più specifica "B2"

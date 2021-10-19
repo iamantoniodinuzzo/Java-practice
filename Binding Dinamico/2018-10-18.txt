@@ -1,5 +1,0 @@
-alfa . f (null, gamma); firme candidate 1,5,6,4,3,2; più specifica 1; output "1";
-beta . f (gamma, gamma); firme candidate 4,3,2,1,5,6; più specifica 3,1; output nessuno perchè sono entrambe valide;
-gamma. f (gamma, alfa); firme candidate 4; più specifica 4; output 4;
-gamma. f (beta, beta); firme candidate 6,2; più specifica 6; output "6";
-1 + "1"; firme candidate nessuna; output 11; 
