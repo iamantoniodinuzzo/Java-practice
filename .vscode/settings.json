@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "Scelta della firma",
         "Multithreading/VoteBox",
         "Multithreading/ExecuteInParallel",
         "JFC/inverseMap",
@@ -23,6 +24,6 @@
         "JFC/Book&Library",
         "Esercizi elementari/Question&Answer",
         "Esercizi elementari/Cartella-Non completo",
-        "Scelta della firma"
+        "Binding Dinamico"
     ]
 }

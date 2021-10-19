@@ -12,6 +12,7 @@
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
     <li><a href="#multithreading">Multithreading</a></li>
     <li><a href="#classe-mancante">Classe mancante</a></li>
+	<li><a href="#binding-dinamico">Binding Dinamico</a></li>
   </ul>
 
 <!-- ABOUT THE PROJECT -->
@@ -1107,3 +1108,12 @@ public class A extends B {
 }
 ```
 </details>
+
+
+<!-- BINDING DINAMICO -->
+
+# [Binding Dinamico](https://github.com/Indisparte/Java-practice/tree/main/Binding%20Dinamico)
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
+E' possibile trovare il file degli esercizi svolti cliccando sul link alla cartella.
