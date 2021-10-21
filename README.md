@@ -992,13 +992,13 @@ Set<Integer> s = new HashSet<Integer>();
 s .add(3); s .add(13); s .add(88);
 RunnableWithArg<Integer> r = new RunnableWithArg<Integer>() {
 	public void run(Integer i) {
-		System.out.println( i/2);
+		System.out.println(i/2);
 	}
 };
 Thread t = new RunOnSet<Integer>(r, s);
 t . start ()
 ```
-Un possibile output</br>
+**Un possibile output**</br>
 1</br>
 6</br>
 44
@@ -1036,7 +1036,7 @@ li esegue contemporaneamente e restituisce 1 oppure 2, a seconda di quale dei du
 terminato prima.
 Si noti che threadRace è un metodo bloccante. Sarà valutato negativamente l'uso di attesa attiva.
 
-## [Concurrent Filter](https://github.com/Indisparte/Java-practice/tree/main/Multithreading/ConcurrentFIlter-Incompleto)
+## [Concurrent Filter](https://github.com/Indisparte/Java-practice/tree/main/Multithreading/ConcurrentFilter)
 Data la seguente interfaccia:
 ```java
     public interface Selector<T> {
