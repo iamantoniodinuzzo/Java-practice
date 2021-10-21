@@ -1,12 +1,4 @@
 public class PeriodicJob{
-	public static void main(String[] args){
-		Runnable r = new Runnable(){
-			public void run(){
-				System.out.println("ciao");
-			}
-		};
-		periodicJob(r,1000);		
-	}
 
 	public static void  periodicJob(Runnable r, int p){
 		new Thread(){
@@ -21,7 +13,15 @@ public class PeriodicJob{
 					}	
 				}
 			}
+		}.start();
+	}
+
+	public static void main(String[] args){
+		Runnable r = new Runnable(){
+			public void run(){
+				System.out.println("ciao");
+			}
 		};
-		myThread.start();
+		periodicJob(r,2000);		
 	}
 }

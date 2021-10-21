@@ -2,7 +2,9 @@
     "java.project.sourcePaths": [
         "Scelta della firma",
         "Multithreading/VoteBox",
+        "Multithreading/PeriodicJob",
         "Multithreading/Interruptor-incompleto",
+        "Multithreading/Interruptor",
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
         "JFC/inverseMap",
@@ -27,6 +29,6 @@
         "Esercizi elementari/Question&Answer",
         "Esercizi elementari/Cartella-Non completo",
         "Esercitazione thread",
-        "Multithreading/Interruptor"
+        "Multithreading/RunOnSet"
     ]
 }

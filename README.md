@@ -1002,6 +1002,8 @@ Un possibile output</br>
 1</br>
 6</br>
 44
+
+
 ## [Shared Object](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/SharedObject)
 Elencare tutte le sequenze di output possibili per il seguente programma.
 ```java
