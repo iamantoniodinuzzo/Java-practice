@@ -1108,12 +1108,3 @@ public class A extends B {
 }
 ```
 </details>
-
-
-<!-- BINDING DINAMICO -->
-
-# [Binding Dinamico](https://github.com/Indisparte/Java-practice/tree/main/Binding%20Dinamico)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
-E' possibile trovare il file degli esercizi svolti cliccando sul link alla cartella.
