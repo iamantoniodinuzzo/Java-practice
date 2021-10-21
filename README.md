@@ -929,7 +929,16 @@ Visitare la cartella linkata nel titolo della sezione per visualizzare gli svolg
 <details>
 	<summary>Clicca per espandere !</summary>
 
-## [delayIterator](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/delayIterator.java)
+## [Interruptor](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/Interruptor)
+Implementare la classe **Interruptor**, il cui compito è quello di interrompere un dato thread dopo un numero fissato di secondi.
+
+Ad esempio, se t è un riferimento ad un oggetto Thread, la linea
+ `Interruptor i = new Interruptor(t,10);`
+
+crea un nuovo thread di esecuzione che interrompe il thread t dopo 10 secondi.
+
+
+## [delayIterator](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/DelayIterator)
 Implementare un metodo statico delayIterator che prende come argomenti un iteratore i ed un
 numero intero n, e restituisce un nuovo iteratore dello stesso tipo di i, che restituisce gli stessi
 elementi di i, ma in cui ogni elemento viene restituito (dal metodo next) dopo un ritardo di n
@@ -953,7 +962,7 @@ while(i.hasNext()){
 
 Output: il programma stampa il contenuto della lista, mostrando ciascun valore dopo 2 secondi di ritardo.
 
-## [PeriodicJob](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/PeriodicJob.java)
+## [PeriodicJob](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/PeriodicJob)
 Implementare il metodo statico periodicJob, che accetta un Runnable r e un periodo p espresso in millisecondi e fa partire un'esecuzione di r ogni p millisecondi .
 Il metodo periodicJob non deve essere bloccante.
 Esempio d'uso:
@@ -967,7 +976,7 @@ periodicJob(r,2000);
 ```
 Risultato : il programma stampa "Ciao" ogni 2 secondi.
 
-## [RunOnSet](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/RunOnSet.java)
+## [RunOnSet](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/RunOnSet)
 Si consideri la seguente interfaccia.
 ```java
 public interface RunnableWithArg<T> {
@@ -993,7 +1002,7 @@ Un possibile output</br>
 1</br>
 6</br>
 44
-## [Shared Object](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/SharedObject.java)
+## [Shared Object](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/SharedObject)
 Elencare tutte le sequenze di output possibili per il seguente programma.
 ```java
 public static void main(String[] args) throws InterruptedException {
@@ -1019,7 +1028,7 @@ public static void main(String[] args) throws InterruptedException {
 	t1. start () ; t2. start () ; t3. start () ;
 }
 ```
-## [ThreadRace](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/ThreadRace.java)
+## [ThreadRace](https://github.com/Indisparte/Java-practice/blob/main/Multithreading/ThreadRace)
 Implementare il metodo statico threadRace, che accetta due oggetti Runnable come argomenti,
 li esegue contemporaneamente e restituisce 1 oppure 2, a seconda di quale dei due Runnable è
 terminato prima.
