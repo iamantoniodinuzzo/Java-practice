@@ -34,12 +34,12 @@ public class VoteBox{
     /**
      * Permette di votare sollevando un'eccezione se si cerca di votare più di una volta
      * @param vote il voto 
-     * @throws RunTimeException Viene sollevata quando si cerca di votare più di una volta.
+     * @throws {@link java.lang.RuntimeException} Viene sollevata quando si cerca di votare più di una volta.
      */
     public void vote(boolean vote)  {
         if(l.contains(Thread.currentThread())){
             t.interrupt();
-            throw new RuntimeException(Thread.currentThread()+"Ha tentato di votare due volte");
+            throw new RuntimeException(Thread.currentThread()+" Ha tentato di votare due volte");
         }
         l.add(Thread.currentThread());
     }
@@ -57,7 +57,6 @@ public class VoteBox{
     }
 
     /**
-     * Restituisce true se la votazione è termianta, false altrimenti
      * @return True se la votazione è terminata, false altrimenti
      */
     public boolean isDone(){return !t.isAlive();}

@@ -1,29 +1,37 @@
-public static int threadRace(Runnable r1, Runnable r2)throws InterruptedException{
+public class ThreadRace {
+    
+    public static synchronized int threadRace(Runnable r1, Runnable r2){
 	
-	final int[] result = {0};// il puntatore è final quindi non posso modificare il puntatore creando un nuovo array result = new result[]
-	
-	Thread t1 = new Thread(
-		@Override
-		public void run(){
-			r1.run();
-			result[0] = 1;
-		}
-	);
-	
-	Thread t2 = new Thread(
-		@Override
-		public void run(){
-			r2.run();
-			result[0] = 2;
-		}
-	);
-	
-	t1.start();
-	t2.start();
-	
-	t1.join();
-	t2.join();
-	
-	return 3 - result[0];
-	
+      Thread t1 = new Thread(r1);
+      Thread t2 = new Thread(r2);
+      int value = -1;
+
+      try {
+          t1.start();
+          t2.start();
+          t1.join();
+
+          if (t2.isInterrupted()) {
+              return value;
+          }
+
+          if(t2.isAlive()){
+              value = 1; 
+          }else{
+              value = 2;
+          }
+
+      } catch (InterruptedException e) {e.printStackTrace();}
+      
+      finally { return value; }
+        
+    }
+
+    public static void main(String[] args) {
+        Runnable r = new Runnable() {
+            public void run(){}
+        };
+
+        System.out.println(threadRace(r, r));
+    }
 }

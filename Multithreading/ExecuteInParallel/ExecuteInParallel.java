@@ -3,8 +3,8 @@ public class ExecuteInParallel {
 
     /**
      * Esegue tutti gli oggetti Runnable dell'array, k alla volta
-     * @param a L'array di oggetti {@link Runnable}
-     * @param k Il numero di oggetti Runnable da eseguire alla volta
+     * @param L'array di oggetti {@link Runnable}
+     * @param Il numero di oggetti {@link Runnable} da eseguire alla volta
      */
     public static void executeInParallel(Runnable[] r , int k){
         Thread[] t = new Thread[r.length];
@@ -36,6 +36,7 @@ public class ExecuteInParallel {
         };
         Runnable[] a = new Runnable[10];
         for (int i = 0; i < a.length; i++) a[i] = r;
+
         executeInParallel(a, 4);
 
     }

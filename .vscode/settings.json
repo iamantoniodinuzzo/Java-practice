@@ -2,9 +2,9 @@
     "java.project.sourcePaths": [
         "Scelta della firma",
         "Multithreading/VoteBox",
+        "Multithreading/ThreadRace",
         "Multithreading/RunOnSet",
         "Multithreading/PeriodicJob",
-        "Multithreading/Interruptor-incompleto",
         "Multithreading/Interruptor",
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
@@ -20,6 +20,7 @@
         "JFC/Library2",
         "JFC/Library",
         "JFC/Intersect",
+        "JFC/GreenPass",
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
         "JFC/Curriculum.java",
@@ -30,6 +31,6 @@
         "Esercizi elementari/Question&Answer",
         "Esercizi elementari/Cartella-Non completo",
         "Esercitazione thread",
-        "Multithreading/ConcurrentFIlter-Incompleto"
+        "Criterio di ordinamento tra oggetti/Date"
     ]
 }

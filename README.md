@@ -774,7 +774,7 @@ System.out.println(i3) ;//(5,20]
 
 </details>
 
-<!-- CRITERI DI ORDINAMENTO-->
+<!-- CRITERI DI ORDINAMENTO TRA OGGETTI -->
 
 # [Criterio di ordinamento tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Criterio%20di%20ordinamento%20tra%20oggetti)
 <p align="right">
@@ -798,6 +798,23 @@ System.out.println(t3) ; //7:24:30
 System.out.println(t3.compareTo(t2)); //1
 System.out.println(t3.compareTo(Time.MIDDAY)); //-1
 ```
+
+## [Date](https://github.com/Indisparte/Java-practice/blob/main/Criterio%20di%20ordinamento%20tra%20oggetti/Date)
+La classe **Date** rappresenta una data tramite tre numeri interi (giorno, mese e anno) e ridefinisce
+**equals** nel modo naturale.
+
+Dire quali delle seguenti sono specifiche valide per un comparatore tra due oggetti **Date** a e **b**.
+Dire anche quali specifiche sono coerenti con **equals**.
+
+compare(a,b) restituisce (nei casi non contemplati, restituisce 0):
+
+a) -1 se l'anno di a è minore di quello di b; 1 se l'anno di a è maggiore di quello di b.</br>
+b) -1 se a e b hanno lo stesso mese; 1 se a e b hanno mesi diversi.</br>
+c) -1 se il mese di a è tra gennaio e giugno e quello di b tra luglio e dicembre; 1 se il mese di b
+è tra gennaio e giugno e quello di a tra luglio e dicembre.</br>
+d) -1 se il giorno oppure il mese di a è uguale a quello di b; 1 se sia il giorno sia il mese di a
+sono diversi da quelli di b.
+
 </details>
 
 <!-- ITERATORI E CICLO FOR EACH -->
