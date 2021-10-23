@@ -879,6 +879,26 @@ for (Integer i : Primes.iterable ) {
 }
 ```
 
+## [IncreasingSubsequence](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/IncreasingSubsequence)
+Implementare la classe **IncreasingSubseq** che, data una lista di oggetti tra loro confrontabili,
+rappresenta la *sottosequenza crescente* che inizia col primo elemento.
+
+Attenzione: la classe deve funzionare con qualunque tipo di dato che sia confrontabile (non solo
+con "Integer").
+
+Sarà valutato negativamente l'uso di "strutture di appoggio", ovvero di spazio aggiuntivo di
+dimensione non costante.
+
+**Esempio d'uso**
+```java
+List<Integer> l = new LinkedList<Integer>();
+l .add(10); l .add(3);
+l .add(5); l .add(12);
+l .add(11); l .add(35);
+for (Integer i : new IncreasingSubseq<Integer>(l))
+System.out.println( i ) ;//10 12 35
+```
+
 </details>
 
 <!-- UGUAGLIANZA TRA OGGETTI  -->
