@@ -790,6 +790,7 @@ Gli orari devono essere confrontabili secondo Comparable. Il metodo minus accett
 x come argomento e restituisce la differenza tra questo orario e x, sotto forma di un nuovo
 oggetto Time. La classe fornisce anche gli orari predefiniti MIDDAY e MIDNIGHT.
 </br>ESEMPIO D'USO	
+
 ```java
 Time t1 = new Time(14,35,0);
 Time t2 = new Time(7,10,30);
@@ -815,6 +816,23 @@ c) -1 se il mese di a è tra gennaio e giugno e quello di b tra luglio e dicembr
 d) -1 se il giorno oppure il mese di a è uguale a quello di b; 1 se sia il giorno sia il mese di a
 sono diversi da quelli di b.
 
+
+## [Product](https://github.com/Indisparte/Java-practice/blob/main/Criterio%20di%20ordinamento%20tra%20oggetti/Date)
+Realizzare la classe **Product**, che rappresenta un prodotto di un supermercato,
+caratterizzato da descrizione e prezzo. I prodotti sono dotati di ordinamento naturale, in base
+alla loro descrizione (ordine alfabetico). Il metodo **getMostExpensive** restituisce il prodotto più
+costoso. Il campo **comparatorByPrice** contiene un comparatore tra prodotti, che confronta i prezzi.
+
+L'implementazione deve rispettare il seguente esempio d'uso.
+
+```java
+Product a = new Product("Sale", 0.60),
+b = new Product("Zucchero", 0.95),
+c = new Product("Cae'", 2.54);
+System.out.println(Product.getMostExpensive());//Caffe', 2.54
+System.out.println(b.compareTo(c));//1
+System.out.println(Product.comparatorByPrice.compare(b, c));//-1
+```
 </details>
 
 <!-- ITERATORI E CICLO FOR EACH -->
