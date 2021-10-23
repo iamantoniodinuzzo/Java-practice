@@ -898,7 +898,29 @@ l .add(11); l .add(35);
 for (Integer i : new IncreasingSubseq<Integer>(l))
 System.out.println( i ) ;//10 12 35
 ```
+## [Selector](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach/Selector)
+L'interfaccia parametrica **Selector** prevede un metodo *select* che restituisce un valore booleano
+per ogni elemento del tipo parametrico.
+```java
+public interface Selector<T> {
+	boolean select(T x);
+}
+```
+Implementare una classe **SelectorIterator** che accetta una collezione e un selettore dello stesso
+tipo, e permette di iterare sugli elementi della collezione per i quali il selettore restituisce true.
 
+**Esempio d'uso**
+```java
+Integer [] a = { 1, 2, 45, 56, 343, 22, 12, 7, 56};
+List<Integer> l = Arrays.asList(a);
+Selector<Integer> pari = new Selector<Integer>() {
+	public boolean select(Integer n) {
+		return (n % 2) == 0;
+	}
+};
+for (Integer n: new SelectorIterator<Integer>(l, pari))
+	System.out.print(n + " ");//2 56 22 12 56
+```
 </details>
 
 <!-- UGUAGLIANZA TRA OGGETTI  -->

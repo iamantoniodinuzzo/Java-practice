@@ -28,11 +28,12 @@
         "JFC/Color",
         "JFC/Bug",
         "JFC/Book&Library",
+        "Iteratori e ciclo foreach/IncreasingSubsequence",
         "Esercizi elementari/Question&Answer",
         "Esercizi elementari/Cartella-Non completo",
         "Esercitazione thread",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "Iteratori e ciclo foreach/IncreasingSubsequence"
+        "Iteratori e ciclo foreach/Selector"
     ]
 }
