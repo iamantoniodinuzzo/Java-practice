@@ -326,3 +326,57 @@ public static <T, V> Set<V> commonKeys(Map<? extends T,V> m1, Map<? extends T,V>
     return result;
    }
 ```
+## findNext
+Il metodo statico findNext accetta un insieme, un comparatore e un oggetto x, e restituisce il più
+piccolo oggetto dell'insieme che è maggiore di x (secondo il comparatore).
+
+```java
+<T> T findNext(Set<? extends T> set, Comparator<?> comp, T x)
+```
+1. Funzionalità, il metodo non è funzionale in quanto non posso utilizare il comparatore di tipo jolly.
+
+```java
+<S,T extends S> T findNext(Set<T> set, Comparator<S> comp, T x);
+```
+1. Funzionalità, è funzionale, posso costruire il corpo del metodo ed utilizzare il comparatore.
+2. Completezza, non è completa posso utilizzare solo il comparatore della superclasse quindi avessi un set di Employee con superclasse Person, potrei passare come comparatore solo `Comparator<Person>`.
+3. Correttezza, la firma rifiuta i valori non corretti.
+4. Semplicità, la firma non è semplice per la presenza di due parametri di tipo. Ulteriori garanzie non vengono offerte.
+
+```java
+<S,T extends S> S findNext(Set<S> set, Comparator<T> comp, S x);
+```
+1. Funzionalità, è funzionale.
+2. Completezza, non è completa posso utilizzare solo il comparatore che abbia come tipo la sottoclasse T e dunque avessi una classe Employee con superclasse Person, potrei passare come comparatore solo `Comparator<Employee>`.
+3. Correttezza, la firma è corretta in quanto rifiuta i valori non corretti.
+4. Semplicità, la firma non è semplice per la presenta di due parametri di tipo. Ulteriori garanzie non vengono offerte.
+
+```java
+<T> T findNext(Set<T> set, Comparator<? super T> comp, T x);
+```
+1. Funzionalità, il metodo è funzionale.
+2. Completezza, è completo accetta il giusto tipo di comparatore.
+3. Correttezza, la firma è corretta in quanto rifiuta i valori non validi.
+4. Semplicità, la firma è semplice perchè presenta un solo parametro di tipo. Ulteriori garanzie offerte, nessuna.
+
+```java
+<T> T findNext(Set<T> set, Comparator<T> comp, Object x);
+```
+1. Funzionalità, il metodo non è funzionale in quanto non posso confrontare gli elementi del set e confrontarli con Object.
+**Firma migliore**
+```java
+<T> T findNext(Set<? extends T> coll, Comparator<? super T> comp, T x); 
+```
+1. Funzionale.
+2. Completa in quanto accetta tutti i tipi di collezione
+**Implementazione**
+```java
+public static <T> T findNext(Set<? extends T> set, Comparator<? super T> comp, T x){
+        final ArrayList<T> list = new ArrayList<>(set);
+        Collections.sort(list, comp);
+
+        return (comp.compare(list.get(0), x) > 0)? list.get(0): null;
+
+}
+```
+
