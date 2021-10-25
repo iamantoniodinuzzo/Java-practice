@@ -268,3 +268,61 @@ boolean isIncreasing(Map<?,?> m, Comparator<?> c);
         return true;
     }
 ```
+
+## commonKeys
+Implementare un metodo statico commonKeys, che accetta due mappe, e restituisce l'insieme
+degli oggetti che compaiono come chiavi in entrambe le mappe.
+
+```java
+<T> Set<T> commonKeys(Map<T,?> m1, Map<T,?> m2);
+```
+1. Funzionalità, il metodo non è funzionale perchè non posso inserire un oggetto sconosciuto all'interno del set di ritorno di tipo definito.
+
+```java
+<T,V1,V2> Set<T> commonKeys(Map<T,V1> m1, Map<T,V2> m2);
+```
+1. Funzionalità, il metodo non è funzionale in quanto le due mappe hanno le stesse chiavi ma valori di tipo diverso ed è dunque impossibile costruire un Set di ritorno.
+
+```java
+Set<Object> commonKeys(Map<?,?> m1, Map<?,?> m2)
+```
+1. Funzionalità, il metodo è funzionale, quando itero su m1 ed m2 non posso conoscere il loro tipo effettivo e con Object non ho problemi.
+2. Completezza, il metodo è completo in quanto con il parametro jolly posso passare qualsiasi tipo di valore.
+3. Correttezza, il metodo non è corretto in quanto i valori delle due mappe possono essere diversi e renderebbe impossibile costruire il set di ritorno
+4. Semplicità, non presenta parametri di tipo ed è dunque una firma molto semplice. Ulteriori garanzie, non posso invocare add su entrambe le mappe.
+
+```java
+<T> Set<? extends T> commonKeys(Map<? extends T,?> m1, Map<? extends T,?> m2);
+```
+1. Funzionalità, non è funzionale in quanto non posso invocare add sul set di ritorno e dunque non posso costruire il risultato.
+
+```java
+<T> Set<?> commonKeys(Map<T,?> m1, Map<?,?> m2)
+```
+1. Funzionalità, non è funzionale in quanto non posso invocare il metodo add sul set di ritorno.
+
+**La Miglior firma**
+```java
+<T, V> Set<V> commonKeys(Map<? extends T,V> m1, Map<? extends T,V> m2)
+```
+1. Funzionalità, è funzionale inq uanto posso iterare su entrambe le mappe
+2. Completezza, in quanto accetta tutti i valori richiesti
+3. Correttezza, è corretta perchè rifiuta i valori non richiesti in questo caso rifiuta le mappe che hanno tipo di valori diverso
+4. Semplicità, non è semplice in quanto presenta parametri di tipo. Ulteriori garanzie, è impossibile invocare il metodo put su entrambe le mappe.
+**Implementazione**
+
+```java
+public static <T, V> Set<V> commonKeys(Map<? extends T,V> m1, Map<? extends T,V> m2){
+       HashSet<V> result = new HashSet<>();
+       
+       for (Map.Entry<? extends T,V> entry : m1.entrySet()) {
+        for (Map.Entry<? extends T,V> entry2 : m2.entrySet()) {
+           if(entry.getKey().equals(entry2.getKey())){
+               result.add(entry.getValue());
+               result.add(entry2.getValue());
+           }
+        }
+    }
+    return result;
+   }
+```
