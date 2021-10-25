@@ -3,37 +3,51 @@ import java.util.*;
 public class TesterClass {
 
     // Method to test
-    public static <T> T findNext(Collection<? extends T> coll, Comparator<? super T> comp, T x){
-        final ArrayList<T> list = new ArrayList<>(coll);
-        Collections.sort(list, comp);
+    public static <S,T> boolean arePermutations(List<S> a, List<T> b){
+        if(a.size() != b.size()) return false;
 
-        return (comp.compare(list.get(0), x) > 0)? list.get(0): null;
+        for (S s : a) {
+            if(!b.contains(s))
+                return false;
+        }
 
+        return true;
     }
 
        public static void main(String[] args) {
-      
-        ArrayList<Integer> coll = new ArrayList<>();
-        coll.add(1);
-        coll.add(2);
-        coll.add(0);
-        coll.add(16);
-
-        Comparator<Integer> comp = new Comparator<>(){
-            @Override
-            public int compare(Integer i1, Integer i2){
-                if(i1 % 2 == 0 || i2 % 2 == 0){
-                    if(i1 % 2 == 0){
-                        return 1;
-                    }
-
-                    if(i2 % 2 == 0){
-                        return -1;
-                    }
-                }
-                return 0;
+         class Person{
+            private String nome;
+            public Person(String nome){
+                this.nome = nome;
             }
-        };
+
+            public boolean equals(Object obj){
+                if(!(obj instanceof Person)) return false;
+
+                Person p = (Person) obj;
+
+                return this.nome.equalsIgnoreCase(p.getNome());
+            }
+
+            public String getNome() {
+                return nome;
+            }
+        }
+        ArrayList<Object> l1 = new ArrayList<>();
+        l1.add(new Person("Antonio"));
+        l1.add(new Person("MArco"));
+        l1.add(new Person("Giuseppe"));
+        l1.add(new Person("Anna"));
+
+        ArrayList<Object> l2 = new ArrayList<>();
+        l2.add(new Person("Anna"));
+        l2.add(new Person("MArco"));
+        l2.add(new Person("Antonio"));
+        l2.add(new Person("Giuseppe"));
+
+        // ArrayList<Object> l2 = new ArrayList<>(Arrays.asList(1,2,3,4));
+        
+        System.out.println(arePermutations(l1, l2));
 
 
     }

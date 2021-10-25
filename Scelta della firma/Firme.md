@@ -1,6 +1,31 @@
 # Scelta della firma
 > Valutare ciascuna delle seguenti intestazioni in base ai criteri di funzionalità, completezza, correttezza, fornitura di ulteriori garanzie, semplicità e specificità del tipo di ritorno. Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 
+I criteri per la scelta della firma migliore di un metodo sono i seguenti:
+
+1. Funzionalità
+2. Completezza
+3. Correttezza
+4. Semplicità e Ulteriori garanzie
+
+La **funzionalità** è obbligatoria, indica se riusciamo a scrivere quel metodo. Gli altri criteri se presenti consentono di migliorare la firma. La priorità dei criteri è in base al loro ordine, tranne per il criterio di Semplicità e di Ulteriori garanzie che hanno la stessa priorità.
+
+L’unico criterio per la scelta del miglior tipo di ritorno di un metodo è il seguente:
+
+5. Specificità
+
+Il tipo di ritorno deve essere il più specifico possibile e al tempo stesso deve fornire più informazioni possibili.
+### Table of content
+<ul>
+    <li><a href="#findprevious">findPrevious, 2019-1-23</a></li>
+    <li><a href="#makemap">makeMap, 2018-6-20</a></li>
+    <li><a href="#cartesianproduct">cartesianProduct, 2018-2-22</a></li>
+    <li><a href="#greatestlowerbound">greatestLowerBound, 2018-10-18</a></li>
+    <li><a href="#isincreasing">isIncreasing, 2018-1-24</a></li>
+    <li><a href="#commonkeys">commonKeys, 2017-7-20</a></li>
+    <li><a href="#findnext">findNext, 2017-6-21</a></li>
+    <li><a href="#arepermutations">arePermutations, 2016-6-22</a></li>
+</ul>
 <!----->
 
 ## findPrevious
@@ -379,4 +404,9 @@ public static <T> T findNext(Set<? extends T> set, Comparator<? super T> comp, T
 
 }
 ```
+
+## arePermutations
+Il metodo statico arePermutations, accetta due liste e controlla se contengono gli stessi elementi
+(secondo equals), anche in ordine diverso.
+
 
