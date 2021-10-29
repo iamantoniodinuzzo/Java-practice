@@ -623,6 +623,31 @@ un tale oggetto non esiste, il metodo restituisce null.</br>
 Prestare particolare attenzione alla scelta della firma del metodo. Si ricordi che la classe Class è
 parametrica.
 
+## [RadioChannel](https://github.com/Indisparte/Java-practice/tree/main/JFC/RadioChannel)
+Radio offre un costruttore senza argomenti e i seguenti metodi:
+- addChannel memorizza e restituisce una nuova stazione,caratterizzata da nome e frequenza. Il tentativo di memorizzare una stazione che ha la stessa frequenza di una stazione già memorizzata deve provocare un’eccezione.
+- nearest accetta una frequenza e restituisce la stazione con la frequenza più vicina a quella data.
+
+Inoltre, se si itera su un oggetto Radio si ottiene la sequenza di stazioni inserite, in ordine crescente di frequenza.
+
+Fare in modo che l’unico modo per creare oggetti Channel sia tramite il metodo addChannel.
+
+L’implementazione deve rispettare il seguente esempio d’uso.
+```java
+Radio r = new Radio();
+Radio.Channel rai1 = r.addChannel("Rai Radio Uno", 89.3);
+Radio.Channel kk = r.addChannel("Radio Kiss Kiss", 101.4);
+Radio.Channel rmc = r.addChannel("Radio Monte Carlo", 96.4);
+
+for (Radio.Channel c: r) {
+	System.out. println (c) ;//Rai Radio Uno (89.3)
+							// Radio Monte Carlo (96.4)
+							//Radio Kiss Kiss (101.4)
+}
+System.out. println (r . nearest (98.1)) ;//Radio Monte Carlo (96.4)
+
+```
+
 </details>
 
 <!-- ESERCIZI ELEMENTARI -->

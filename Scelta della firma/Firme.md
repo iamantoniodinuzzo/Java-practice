@@ -405,8 +405,4 @@ public static <T> T findNext(Set<? extends T> set, Comparator<? super T> comp, T
 }
 ```
 
-## arePermutations
-Il metodo statico arePermutations, accetta due liste e controlla se contengono gli stessi elementi
-(secondo equals), anche in ordine diverso.
-
 
