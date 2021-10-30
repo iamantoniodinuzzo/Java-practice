@@ -5,11 +5,13 @@
         "Multithreading/ThreadRace",
         "Multithreading/SimpleThread",
         "Multithreading/RunOnSet",
+        "Multithreading/Prova",
         "Multithreading/PeriodicJob",
         "Multithreading/Interruptor",
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
         "JFC/inverseMap",
+        "JFC/Tutor-Incompleto",
         "JFC/SocialNetwork",
         "JFC/SelectKeys",
         "JFC/Room",
@@ -34,6 +36,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "Multithreading/Prova"
+        "JFC/Relation-Incompleto"
     ]
 }

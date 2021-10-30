@@ -35,13 +35,13 @@ public class TesterClass {
         }
         ArrayList<Object> l1 = new ArrayList<>();
         l1.add(new Person("Antonio"));
-        l1.add(new Person("MArco"));
+        l1.add(new Person("Marco"));
         l1.add(new Person("Giuseppe"));
         l1.add(new Person("Anna"));
 
         ArrayList<Object> l2 = new ArrayList<>();
         l2.add(new Person("Anna"));
-        l2.add(new Person("MArco"));
+        l2.add(new Person("Marco"));
         l2.add(new Person("Antonio"));
         l2.add(new Person("Giuseppe"));
 

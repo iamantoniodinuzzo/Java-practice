@@ -361,7 +361,7 @@ sedile .turnOn();
 c.printOn();//Sedile riscaldato \n Riscaldamento
 ```
 
-## [Relation](https://github.com/Indisparte/Java-practice/tree/main/JFC/Relation-Incompleto)
+## [Relation](https://github.com/Indisparte/Java-practice/tree/main/JFC/Relation)
 Realizzare la classe **Relation**, che rappresenta una relazione binaria tra un insieme S e un insieme
 T. In pratica, una Relation è analoga ad una Map, con la differenza che la Relation accetta chiavi
 duplicate.</br>
@@ -370,6 +370,7 @@ di oggetti dalla relazione. Il metodo **image** accetta un oggetto x di tipo S e
 degli oggetti di tipo T che sono in relazione con x. Il metodo **preImage** accetta un oggetto x di
 tipo T e restituisce l'insieme degli oggetti di tipo S che sono in relazione con x.
 **Caso d'uso**
+
 ```java
 Relation<Integer,String> r = new Relation<Integer,String>();
 r .put(0, "a"); r .put(0, "b"); r .put(0, "c");
