@@ -649,6 +649,25 @@ System.out. println (r . nearest (98.1)) ;//Radio Monte Carlo (96.4)
 
 ```
 
+## [UML](https://github.com/Indisparte/Java-practice/tree/main/JFC/UML)
+Nell'ambito di un programma per la progettazione del software, si implementino la classi **UML-Class** e **UMLAggregation**, che rappresentano una classe ed una relazione di aggregazione, all'interno di un diagramma delle classi **UML**. Il costruttore di **UMLAggregation** accetta le due classi tra le
+quali vale l'aggregazione, la cardinalità minima e quella massima.
+**Esempio d'uso**
+
+```java
+UMLClass impianto = new UMLClass(``Impianto'');
+UMLClass apparecchio = new UMLClass(``Apparecchio'');
+UMLClass contatore = new UMLClass(``Contatore'');
+new UMLAggregation(apparecchio, impianto, 1, 1);
+new UMLAggregation(impianto, apparecchio, 0,
+UMLAggregation.INFINITY);
+new UMLAggregation(impianto, contatore, 0, 1);
+System.out.println(impianto);//Classe: Impianto
+							//Aggregazioni:
+							//Impianto-Apparecchio, cardinalità: 0..infinito
+							//Impianto-Contatore, cardinalità: 0..1
+```
+
 </details>
 
 <!-- ESERCIZI ELEMENTARI -->

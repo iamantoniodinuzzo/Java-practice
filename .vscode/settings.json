@@ -15,6 +15,7 @@
         "JFC/SocialNetwork",
         "JFC/SelectKeys",
         "JFC/Room",
+        "JFC/Relation-Incompleto",
         "JFC/RadioChannel",
         "JFC/Progression",
         "JFC/Panino",
@@ -36,6 +37,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Relation-Incompleto"
+        "JFC/UML"
     ]
 }
