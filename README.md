@@ -1,4 +1,8 @@
-<center><h1>Esercizi di Java Avanzato!<h1></center>
+<p>
+<center><h1> Esercizi di Java avanzato</h1></center>
+</p>
+
+<img src='https://random-memer.herokuapp.com/' title="Meme" alt="Please refresh the page if the meme doesn't show up.">
 
 ## Table of contents
 <!-- TABLE OF CONTENTS -->
@@ -1339,6 +1343,10 @@ public class A extends B {
 <a href="#table-of-contents">Back to top</a>
 </p>
 
-# Contacts
-Per qualsiasi errore, confronto o consiglio non esitare a mandare un'email!
+# Contatto
+Invia una email a 📫 **tonydinu02@gmail.com** per qualsiasi errore, confronto o consiglio!
+> Inserisci come oggetto nella email "[GitHub] oggetto" dove per oggetto si intende il motivo per cui mi stai romp
+
 Risponderò appena sarò disponibile.
+
+
