@@ -17,7 +17,7 @@
     <li><a href="#multithreading">Multithreading</a></li>
     <li><a href="#classe-mancante">Classe mancante</a></li>
 	<li><a href="#binding-dinamico">Binding Dinamico</a></li>
-	<li><a href="#contacts">Contatti</a></li>
+	<li><a href="#contatto">Contatto</a></li>
 
   </ul>
 
