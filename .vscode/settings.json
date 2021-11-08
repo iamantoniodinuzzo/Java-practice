@@ -20,6 +20,7 @@
         "JFC/Relation-Incompleto",
         "JFC/RadioChannel",
         "JFC/Progression",
+        "JFC/PostIt",
         "JFC/Panino",
         "JFC/Movie",
         "JFC/Merge",
@@ -40,6 +41,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/PostIt"
+        "JFC/Impianto e Apparecchio"
     ]
 }
