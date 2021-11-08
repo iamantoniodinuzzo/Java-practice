@@ -3,25 +3,25 @@ import java.util.*;
 public class PostIt {
     private Object surface;
     private String text;
-    private static ArrayList<PostIt> allPostIt = new ArrayList<>();
+    private static Map<Object,List<PostIt>> messages = new HashMap<>(); 
+    private static ArrayList<PostIt> l ;
 
     public PostIt(Object surface, String text) {
-        this.surface = Objects.requireNonNull(surface);
-        this.text = Objects.requireNonNull(text);
-        allPostIt.add(this);
+       //controllo se è già presente l'oggetto, altrimenti creo la lista
+       if(messages.get(surface) == null)
+        l = new ArrayList<>();
+    
+        //creo PostIt
+        this.surface = surface;
+        this.text = text;
+        //aggiungo PostIt alla lista dell'oggetto
+        l.add(this);
+        //inserisco la surface e la nuova lista della mappa
+        messages.put(surface, l);
     }
 
     public static List<PostIt> getMessages(Object surface) {
-        List<PostIt> result = new ArrayList<>();
-        for (PostIt postIt : allPostIt) {
-            if (postIt.getSurface().equals(surface))
-                result.add(postIt);
-        }
-        return result;
-    }
-
-    public Object getSurface() {
-        return surface;
+        return messages.get(surface);
     }
 
     @Override
