@@ -668,6 +668,24 @@ System.out.println(impianto);//Classe: Impianto
 							//Impianto-Contatore, cardinalità: 0..1
 ```
 
+## [CountByType](https://github.com/Indisparte/Java-practice/tree/main/JFC/CountByType)
+Implementare il metodo statico countByType che, data una lista di oggetti, stampa a video il
+numero di oggetti contenuti nella lista, divisi in base al loro tipo effettivo.
+
+_Attenzione_: il metodo deve funzionare con qualunque tipo di lista e di oggetti contenuti.
+**Caso d'uso**
+```java
+List<Number> l = new LinkedList<Number>();
+l .add(new Integer(3));
+l .add(new Double(4.0))
+l .add(new Float(7.0f));
+l .add(new Integer(11));
+countByType(l);//java.lang.Double : 1
+				//java.lang.Float : 1
+				//java.lang.Integer : 2
+```
+
+
 </details>
 
 <!-- ESERCIZI ELEMENTARI -->

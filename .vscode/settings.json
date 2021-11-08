@@ -11,6 +11,7 @@
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
         "JFC/inverseMap",
+        "JFC/UML",
         "JFC/Tutor-Incompleto",
         "JFC/SocialNetwork",
         "JFC/SelectKeys",
@@ -37,6 +38,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/UML"
+        "JFC/CountByType"
     ]
 }
