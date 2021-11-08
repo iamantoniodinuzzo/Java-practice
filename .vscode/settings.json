@@ -29,6 +29,7 @@
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
         "JFC/Curriculum.java",
+        "JFC/CountByType",
         "JFC/Contest",
         "JFC/Color",
         "JFC/Bug",
@@ -38,6 +39,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/CountByType"
+        "JFC/VoloEPasseggero"
     ]
 }

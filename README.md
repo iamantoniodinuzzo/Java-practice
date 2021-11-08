@@ -685,7 +685,25 @@ countByType(l);//java.lang.Double : 1
 				//java.lang.Integer : 2
 ```
 
+## [VoloEPasseggero](https://github.com/Indisparte/Java-practice/tree/main/JFC/VoloEPasseggero)
+Si implementino la classe Volo e la classe Passeggero. Il costruttore della classe **Volo** prende come
+argomenti l'istante di partenza e l'istante di arrivo del volo (due numeri interi). Il metodo **add**
+permette di aggiungere un passeggero a questo volo. Se il passeggero che si tenta di inserire è
+già presente in un volo che si accavalla con questo, il metodo add lancia un'eccezione.
 
+**Esempio d'uso**
+```java
+Volo v1 = new Volo(1000, 2000);
+Volo v2 = new Volo(1500, 3500);
+Volo v3 = new Volo(3000, 5000);
+Passeggero mario = new Passeggero("Mario");
+Passeggero luigi = new Passeggero("Luigi");
+v1.add(mario);
+v1.add(luigi ) ;
+v3.add(mario);
+// La seguente istruzione provoca l ' eccezione
+v2.add(mario);//Exception in thread "main"...
+```
 </details>
 
 <!-- ESERCIZI ELEMENTARI -->
