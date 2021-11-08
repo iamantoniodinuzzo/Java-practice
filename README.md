@@ -704,6 +704,26 @@ v3.add(mario);
 // La seguente istruzione provoca l ' eccezione
 v2.add(mario);//Exception in thread "main"...
 ```
+
+## [PostIt](https://github.com/Indisparte/Java-practice/tree/main/JFC/PostIt)
+Un oggetto di tipo PostIt rappresenta un breve messaggio incollato (cioè, collegato) ad un oggetto.
+Il costruttore permette di specificare il messaggio e l'oggetto al quale incollarlo. Il metodo
+statico **getMessages** prende come argomento un oggetto e restituisce l'elenco dei PostIt collegati
+a quell'oggetto, sotto forma di una lista, oppure null se non c'è nessun PostIt collegato.
+
+**Esempio d'uso**
+```java
+Object frigorifero = new Object();
+Object libro = new Object();
+new PostIt( frigorifero , "comprare il latte");
+new PostIt(libro, "Bello !! ");
+new PostIt(libro, " restituire  a Carlo");
+List<PostIt> pl = PostIt.getMessages(libro);
+	for (PostIt p: pl)
+		System.out.println(p);//Bello!!
+							//restituire a Carlo
+```
+
 </details>
 
 <!-- ESERCIZI ELEMENTARI -->
