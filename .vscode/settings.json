@@ -27,6 +27,7 @@
         "JFC/MakeMap",
         "JFC/Library",
         "JFC/Intersect",
+        "JFC/Impianto e Apparecchio",
         "JFC/GreenPass",
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
@@ -41,6 +42,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Impianto e Apparecchio"
+        "JFC/Molecola"
     ]
 }
