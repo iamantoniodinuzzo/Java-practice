@@ -13,22 +13,27 @@
     <li><a href="#multithreading">Multithreading</a></li>
     <li><a href="#classe-mancante">Classe mancante</a></li>
 	<li><a href="#binding-dinamico">Binding Dinamico</a></li>
+	<li><a href="#contacts">Contatti</a></li>
+
   </ul>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-Questa repository è stata creata con l'intento di esercitarmi e di rendere lo svolgimento degli esercizi disponibile per tutti sia per confronto, sia per chi non ha voglia di pensare troppo allo svolgimento sia per me per ricevere delle correzioni.
+Questa repository è stata creata per esercitarmi con l'esame a scelta di **Linguaggi di programmazione II** del seguente [CDL](http://informatica.dieti.unina.it/index.php/it/)
 
-> _Copiare da uno è plagio, copiare da molti è ricerca_
-> 
+Ci saranno:
+* errori
+* ingiurie
+* anche cose fatte bene
+* cose lasciate a metà o incomplete
+
+Fanne buon uso!
+
 
 <!-- JAVA COLLECTION FRAMEWORK -->
 
 # [Java Collection Framework](https://github.com/Indisparte/Java-practice/tree/main/JFC)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
 <details>
 	<summary>Clicca per espandere !</summary>
 
@@ -110,8 +115,8 @@ b2.assignTo("Paolo");
 b3.assignTo("Filomena");
 b4.assignTo("Filomena");
 System.out.println(unassigned.size ()) ;
-Set<Bug> lo = Bug.getAssignedTo("Filomena");
-System.out.println( lo ) ;
+Set<Bug> filo = Bug.getAssignedTo("Filomena");
+System.out.println( filo ) ;
 ```
 ## [Room](https://github.com/Indisparte/Java-practice/tree/main/JFC/Room)
 Realizzare le classi **Room** e **Reservation**, che rappresentano una camera d'albergo
@@ -123,7 +128,7 @@ l'elenco delle prenotazioni, in ordine cronologico.
 L'implementazione deve rispettare il seguente esempio d'uso.
 ```java
 Room r = new Room();
-Reservation p1 = r.reserve("Pasquale Caero", 105, 120);
+Reservation p1 = r.reserve("Pasquale Cero", 105, 120);
 Reservation p2 = r.reserve("Carlo Martello", 5, 20);
 Reservation p3 = r.reserve("Piero", 20, 22);
 Reservation p4 = r.reserve("Marinella", 200, 222);
@@ -249,11 +254,11 @@ System.out.println(c.getPrenotati( Specialista .PEDIATRA));//[]
 Implementare il metodo statico *mergeIfSorted*, che accetta due liste *a* e *b*, e un comparatore *c*, e
 restituisce un'altra lista. Inizialmente, usando due thread diversi, il metodo verifica che le liste
 a e b siano ordinate in senso non decrescente (ogni thread si occupa di una lista). Poi, se le liste
-sono effettivamente ordinate, il metodo le fonde (senza modicarle) in un'unica lista ordinata,
+sono effettivamente ordinate, il metodo le fonde (senza modificarle) in un'unica lista ordinata,
 che viene restituita al chiamante. Se, invece, almeno una delle due liste non è ordinata, il metodo
 termina restituendo null.</br>
 Il metodo dovrebbe avere complessità di tempo lineare.</br>
-Porre particolare attenzione alla scelta della rma, considerando i criteri di funzionalità, completezza,
+Porre particolare attenzione alla scelta della firma, considerando i criteri di funzionalità, completezza,
 correttezza, fornitura di garanzie e semplicità.
 
 ## [SocialUser](https://github.com/Indisparte/Java-practice/tree/main/JFC/SocialUser)
@@ -456,14 +461,14 @@ List<Movie> rockys = r2.getSeries();
 System.out.println(rockys);//[Rocky, Rocky II, Rocky III]
 ```
 ## [ComposeMaps](https://github.com/Indisparte/Java-practice/tree/main/JFC/composeMaps-Incompleto)
-Il metodo composeMaps accetta due mappe a e b, e restituisce una nuova mappa c così denita:
+Il metodo composeMaps accetta due mappe a e b, e restituisce una nuova mappa c così definita:
 le chiavi di c sono le stesse di a; il valore associato in c ad una chiave x è pari al valore associato
 nella mappa b alla chiave a(x).</br>
 Nota: Se consideriamo le mappe come funzioni matematiche, la mappa c è definita come c(x) =
 b(a(x)), cioè come composizione di a e b.</br>
 Valutare ciascuna delle seguenti intestazioni per il metodo composeMaps, in base ai criteri di
 funzionalità, completezza, correttezza, fornitura di ulteriori garanzie, specificità del tipo di ritorno
-e semplicità. Inne, scegliere l'intestazione migliore oppure proporne un'altra.</br>
+e semplicità. Infine, scegliere l'intestazione migliore oppure proporne un'altra.</br>
 ```java
 /*a)*/<S, T, U> Map<S,U> composeMaps(Map<S, T> a, Map<T, U> b)
 /*b)*/<S, T, U> Map<S,U> composeMaps(Map<S, T> a, Map<? extends T, U> b)
@@ -582,7 +587,7 @@ l'oggetto passato come argomento è uno degli oggetti massimali dell'insieme, re
 tale oggetto appartiene all'insieme, ma non è massimale, ed infine solleva un'eccezione se l'oggetto
 non appartiene all'insieme. Il metodo isMaximal deve terminare in tempo costante.
 ```java
-// Stringhe, ordinate parzialmente dalla relazione di presso
+// Stringhe, ordinate parzialmente dalla relazione di prefisso
 class POString implements PartComparable<POString> { ...
 }
 POSet<POString> set = new POSet<POString>();
@@ -739,15 +744,18 @@ acqua.add(ossigeno, 1);
 acqua.add(idrogeno, 1);
 System.out.println(acqua);//H2 O
 ```
+<p align="right">
+<a href="#java-collection-framework">Back to top of section</a>
 
+</p>
 </details>
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
 
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
 
 <details>
 	<summary>Clicca per espandere !</summary>
@@ -774,7 +782,7 @@ System.out.println(z.getArea());//12.0
 
 ## [Tutor](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Tutor-Incompleto)
 Un *tutor* è un dispositivo per la misurazione della velocità media in autostrada. Una serie di
-sensori identica i veicoli in base alle targhe e ne calcola la velocità, misurando il tempo che il
+sensori identifica i veicoli in base alle targhe e ne calcola la velocità, misurando il tempo che il
 veicolo impiega a passare da un sensore al successivo (e, naturalmente, conoscendo la distanza
 tra i sensori).</br>
 
@@ -803,7 +811,7 @@ System.out.println(c.carPasses("SA00001", 1380));//80
 ```
 ## [Cartella](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari/Cartella)
 Realizzare la classe Cartella, che rappresenta una cartella nella Tombola. Una cartella contiene 15 numeri casuali diversi, compresi tra 1 e 90, disposti in 3 righe di 5 numeri, rispettando laseguente regola:
-- una riga non può contenere due numeri della stessa decina; ad esempio, una riga può contenere 9 e 11, ma non 11 e 13.
+- una riga non può contenere due numeri della stessa "decina"; ad esempio, una riga può contenere 9 e 11, ma non 11 e 13.
 
 Il metodo segna accetta il prossimo numero estratto, e controlla se questa cartella ha ottenuto
 un premio, restituendo null, oppure un valore enumerato che rappresenta uno dei premi della
@@ -834,14 +842,18 @@ a2.voteUp();
 a2.voteUp();
 System.out.println(q.getBestAnswer());//New Mexico
 ```
+<p align="right">
+<a href="#esercizi-elementari">Back to top of section</a>
+</p>
 </details>
+
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
 
 <!-- CLASSI INTERNE -->
 
 # [Classi interne](https://github.com/Indisparte/Java-practice/tree/main/Classi%20interne)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
 
 <details>
 	<summary>Clicca per espandere !</summary>
@@ -888,15 +900,18 @@ System.out.println(i1) ;//(5,10,5)
 System.out.println(i2) ;//[7,20]
 System.out.println(i3) ;//(5,20]
 ```
+<p align="right">
+<a href="#classi-interne">Back to top of section</a>
 
+</p>
 </details>
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
 
 <!-- CRITERI DI ORDINAMENTO TRA OGGETTI -->
 
 # [Criterio di ordinamento tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Criterio%20di%20ordinamento%20tra%20oggetti)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
 
 <details>
 	<summary>Clicca per espandere !</summary>
@@ -945,20 +960,22 @@ L'implementazione deve rispettare il seguente esempio d'uso.
 ```java
 Product a = new Product("Sale", 0.60),
 b = new Product("Zucchero", 0.95),
-c = new Product("Cae'", 2.54);
+c = new Product("Caffe'", 2.54);
 System.out.println(Product.getMostExpensive());//Caffe', 2.54
 System.out.println(b.compareTo(c));//1
 System.out.println(Product.comparatorByPrice.compare(b, c));//-1
 ```
+<p align="right">
+<a href="#criterio-di-ordinamento-tra-oggetti">Back to top of section</a>
+</p>
 </details>
-
-<!-- ITERATORI E CICLO FOR EACH -->
-
-# [Iteratori e ciclo foreach](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<!-- ITERATORI E CICLO FOR EACH -->
+
+# [Iteratori e ciclo foreach](https://github.com/Indisparte/Java-practice/tree/main/Iteratori%20e%20ciclo%20foreach)
 <details>
 	<summary>Clicca per espandere !</summary>
 
@@ -1038,15 +1055,18 @@ Selector<Integer> pari = new Selector<Integer>() {
 for (Integer n: new SelectorIterator<Integer>(l, pari))
 	System.out.print(n + " ");//2 56 22 12 56
 ```
+<p align="right">
+<a href="#iteratori-e-ciclo-foreach">Back to top of section</a>
+
+</p>
 </details>
-
-<!-- UGUAGLIANZA TRA OGGETTI  -->
-
-# [Uguaglianza tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti)
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+<!-- UGUAGLIANZA TRA OGGETTI  -->
+
+# [Uguaglianza tra oggetti](https://github.com/Indisparte/Java-practice/tree/main/Uguaglianza%20tra%20oggetti)
 <details>
 	<summary>Clicca per espandere !</summary>
 
@@ -1102,24 +1122,22 @@ y.other.val.</li>
 
 - Dire quali specifiche sono valide e perché. (20 punti)
 - Implementare la specifica (4). (10 punti)
-
+<p align="right">
+<a href="#uguaglianza-tra-oggetti">Back to top of section</a>
+</p>
 </details>
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
 	
 <!-- SCELTA DELLA FIRMA-->
 
 # [Scelta della firma](https://github.com/Indisparte/Java-practice/tree/main/Scelta%20della%20firma)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
-Visitare la cartella linkata nel titolo della sezione per visualizzare gli svolgimenti.
+>Visitare la cartella linkata nel titolo della sezione per visualizzare gli svolgimenti.
 
 <!-- MULTITHREADING -->
 
 # [Multithreading](https://github.com/Indisparte/Java-practice/tree/main/Multithreading)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
-
 <details>
 	<summary>Clicca per espandere !</summary>
 
@@ -1282,18 +1300,19 @@ Implementare il metodo statico ***executeInParallel***, che accetta come argomen
 e un numero naturale k, ed esegue tutti i Runnable dell'array, k alla volta.
 
 In altre parole, all'inizio il metodo fa partire i primi k Runnable dell'array. Poi, non appena uno
-dei Runnable in esecuzione termina, il metodo ne fa partire un altro, preso dall'array, no ad
+dei Runnable in esecuzione termina, il metodo ne fa partire un altro, preso dall'array, fino ad
 esaurire tutto l'array.
+<p align="right">
+<a href="#multithreading">Back to top of section</a>
 
 </details>
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
 
+</p>
 <!-- CLASSE MANCANTE -->
 
 # [Classe mancante](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante)
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
-
 <details>
 	<summary>Clicca per espandere !</summary>
 
@@ -1312,4 +1331,14 @@ public class A extends B {
 		}
 }
 ```
+<p align="right">
+<a href="#classe-mancante">Back to top of section</a>
+</p>
 </details>
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
+
+# Contacts
+Per qualsiasi errore, confronto o consiglio non esitare a mandare un'email!
+Risponderò appena sarò disponibile.
