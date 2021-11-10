@@ -23,6 +23,7 @@
         "JFC/PostIt",
         "JFC/Panino",
         "JFC/Movie",
+        "JFC/Molecola",
         "JFC/Merge",
         "JFC/MakeMap",
         "JFC/Library",
@@ -42,6 +43,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Molecola"
+        "JFC/WifiENetwork"
     ]
 }
