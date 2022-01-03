@@ -36,12 +36,13 @@
         "JFC/Contest",
         "JFC/Color",
         "JFC/Bug",
+        "JFC/BoolExpr",
         "JFC/Book&Library",
         "Iteratori e ciclo foreach/Selector",
         "Iteratori e ciclo foreach/IncreasingSubsequence",
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/BoolExpr"
+        "JFC/Recipe"
     ]
 }
