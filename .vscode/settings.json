@@ -3,13 +3,12 @@
         "Scelta della firma",
         "Multithreading/VoteBox",
         "Multithreading/ThreadRace",
-        "Multithreading/SimpleThread",
         "Multithreading/RunOnSet",
-        "Multithreading/Prova",
         "Multithreading/PeriodicJob",
         "Multithreading/Interruptor",
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
+        "Multithreading/26-10-21",
         "JFC/inverseMap",
         "JFC/WifiENetwork",
         "JFC/VoloEPasseggero",
@@ -18,7 +17,6 @@
         "JFC/SocialNetwork",
         "JFC/SelectKeys",
         "JFC/Room",
-        "JFC/Relation-Incompleto",
         "JFC/RadioChannel",
         "JFC/Progression",
         "JFC/PostIt",
@@ -44,6 +42,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "Multithreading/26-10-21"
+        "JFC/BoolExpr"
     ]
 }

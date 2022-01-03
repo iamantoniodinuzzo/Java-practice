@@ -780,6 +780,28 @@ System.out.println(x);//Casa Esposito (-39.6 dBm)
 <a href="#table-of-contents">Back to top</a>
 </p>
 
+## [BoolExpr](https://github.com/Indisparte/Java-practice/tree/main/JFC/BoolExpr)
+La classe (o interfaccia) **BoolExpr** rappresenta un'espressione dell'algebra booleana (ovvero un
+circuito combinatorio). Il tipo più semplice di espressione è una semplice variabile, rappresentata
+dalla classe **BoolVar**, sottotipo di BoolExpr. Espressioni più complesse si ottengono usando gli
+operatori di tipo and, or e not, corrispondenti ad altrettante classi sottotipo di **BoolExpr**. Tutte
+le espressioni hanno un metodo eval che, dato il valore assegnato alle variabili, restituisce il valore
+dell'espressione. Si consideri *attentamente* il seguente caso d'uso.
+```java
+public static void main(String args[]) {
+	BoolVar x = new BoolVar("x");
+	BoolVar y = new BoolVar("y");
+	BoolExpr notx = new BoolNot(x);
+	BoolExpr ximpliesy = new BoolOr(notx, y);
+	Map<BoolVar,Boolean> m = new HashMap<BoolVar,Boolean>();
+	m.put(x, true);
+	m.put(y, true);
+	System.out.println(x.eval(m));//true
+	System.out.println(ximpliesy.eval(m));//true
+	m.put(y, false);
+	System.out.println(ximpliesy.eval(m));//false
+}
+```
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
