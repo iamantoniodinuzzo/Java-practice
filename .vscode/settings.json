@@ -11,6 +11,7 @@
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
         "JFC/inverseMap",
+        "JFC/WifiENetwork",
         "JFC/VoloEPasseggero",
         "JFC/UML",
         "JFC/Tutor-Incompleto",
@@ -43,6 +44,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/WifiENetwork"
+        "Multithreading/26-10-21"
     ]
 }
