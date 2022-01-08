@@ -864,6 +864,29 @@ public class FunnyOrder implements Comparable<FunnyOrder> {
 	}
 }
 ```
+## [Highway](https://github.com/Indisparte/Java-practice/tree/main/JFC/Highway)
+
+Implementare una classe **Highway**, che rappresenti un'autostrada a senso unico. Il costruttore accetta la lunghezza dell'autostrada in chilometri. Il metodo **insertCar** prende un intero **x** come
+argomento ed aggiunge un'automobile al chilometro x. L'automobile inserita percorrerà l'autostrada
+alla velocità di un chilometro al minuto, (60 km/h) fino alla fine della stessa. Il metodo
+**nCars** prende un intero x e restituisce il numero di automobili presenti al chilometro x. Il metodo
+**progress** simula il passaggio di 1 minuto di tempo (cioè fa avanzare tutte le automobili di un
+chilometro).
+
+Si supponga che thread multipli possano accedere allo stesso oggetto **Highway**.
+
+Dei 25 punti, 8 sono riservati a coloro che implementeranno progress in tempo indipendente dal
+numero di automobili presenti sull'autostrada.
+
+**Esempio d'uso**
+```java
+Highway h = new Highway(10);
+h.insertCar(3) ; h.insertCar(3) ; h.insertCar(5) ;
+System.out.println(h.nCars(4));//0
+h.progress() ;
+System.out.println(h.nCars(4));//2
+```
+
 <!-- ESERCIZI ELEMENTARI -->
 
 # [Esercizi elementari](https://github.com/Indisparte/Java-practice/tree/main/Esercizi%20elementari)
