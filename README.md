@@ -834,7 +834,7 @@ System.out.println(r .toString(4)) ; //Spaghetti aglio e olio
 									//ingredienti e servire.
 ```
 
-## [FunnyOrder]
+## [FunnyOrder](https://github.com/Indisparte/Java-practice/tree/main/JFC/FunnyOrder)
 Determinare l'output del seguente programma e descrivere brevemente l'ordinamento dei numeri
 interi definito dalla classe FunnyOrder.
 ```java
