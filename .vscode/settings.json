@@ -17,6 +17,7 @@
         "JFC/SocialNetwork",
         "JFC/SelectKeys",
         "JFC/Room",
+        "JFC/Recipe",
         "JFC/RadioChannel",
         "JFC/Progression",
         "JFC/PostIt",
@@ -43,6 +44,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Recipe"
+        "JFC/FunnyOrder"
     ]
 }
