@@ -26,12 +26,6 @@
 ## About The Project
 Questa repository è stata creata per esercitarmi con l'esame a scelta di **Linguaggi di programmazione II** del seguente [CDL](http://informatica.dieti.unina.it/index.php/it/)
 
-Ci saranno:
-* errori
-* ingiurie
-* anche cose fatte bene
-* cose lasciate a metà o incomplete
-
 Fanne buon uso!
 
 
