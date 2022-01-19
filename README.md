@@ -906,6 +906,25 @@ for (Pair<Integer, Double> p: p1)
 																//3:3.0
 ```
 
+## [Inventory](https://github.com/Indisparte/Java-practice/tree/main/JFC/Inventory)
+
+Definire una classe parametrica **Inventory<T>** che rappresenta un inventario di oggetti di tipo T.
+Il costruttore senza argomenti crea un inventario vuoto. Il metodo add aggiunge un oggetto di
+tipo T all'inventario. Il metodo count prende come argomento un oggetto di tipo T e restituisce il
+numero di oggetti uguali all'argomento presenti nell'inventario. Infine, il metodo **getMostCommon**
+restituisce l'oggetto di cui è presente il maggior numero di esemplari. **Esempio d'uso:**
+```java
+Inventory<Integer> a = new Inventory<Integer>();
+Inventory<String> b = new Inventory<String>();
+a.add(7); a.add(6); a.add(7); a.add(3);
+b.add("ciao"); b.add("allora?"); b.add("ciao ciao"); b.add("allora?
+");
+System.out.println(a.count(2));//0
+System.out.println(a.count(3));//1
+System.out.println(a.getMostCommon());//7
+System.out.println(b.getMostCommon());//allora?
+```
+
 <p align="right">
 <a href="#java-collection-framework">Back to top of section</a>
 
