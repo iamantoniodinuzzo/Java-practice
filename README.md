@@ -871,6 +871,40 @@ System.out.println(h.nCars(4));//0
 h.progress() ;
 System.out.println(h.nCars(4));//2
 ```
+## [Polinomio bis](https://github.com/Indisparte/Java-practice/tree/main/JFC/Polinomio%20bis)
+Si consideri la seguente classe Pair
+```java
+public class Pair<T,U>{
+	public Pair(T first, U second){
+		this.first = first;
+		this.second = second;
+	}
+
+	public T getFirst(){return first;}
+	public U getSecond(){return second;}
+
+	private T first;
+	private U second;
+
+}
+```
+Un *polinomio* è una espressione algebrica del tipo a0+a1x+: : :+anxn. Si implementi una classe
+Polynomial, dotata di un costruttore che accetta un array contenente i coefficienti a0 : : : an. Deve
+essere possibile iterare sulle coppie (esponente, coefficiente) in cui il coefficiente è diverso da zero.
+Cioè, Polynomial deve implementare Iterable<Pair<Integer, Double>>. Infine, il metodo toString
+deve produrre una stringa simile a quella mostrata nel **seguente caso d'uso**.
+```java
+double a1[] = {1, 2, 0, 3};
+double a2[] = {0, 2};
+Polynomial p1 = new Polynomial(a1);
+Polynomial p2 = new Polynomial(a2);
+System.out.println(p1);//1.0+2.0x^1+3.0x^3
+System.out.println(p2);//2.0x^1
+for (Pair<Integer, Double> p: p1)
+	System.out.println(p. getFirst () + " : " + p.getSecond());//0:1.0
+																//1:2.0
+																//3:3.0
+```
 
 <p align="right">
 <a href="#java-collection-framework">Back to top of section</a>

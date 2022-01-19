@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Scelta della firma",
+        "Programmazione parametrica",
         "Multithreading/VoteBox",
         "Multithreading/ThreadRace",
         "Multithreading/RunOnSet",
@@ -21,6 +22,7 @@
         "JFC/RadioChannel",
         "JFC/Progression",
         "JFC/PostIt",
+        "JFC/Polinomio bis",
         "JFC/Panino",
         "JFC/Movie",
         "JFC/Molecola",
@@ -47,6 +49,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "Programmazione parametrica"
+        "JFC/Polinomio bis-Incompleto"
     ]
 }
