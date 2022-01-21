@@ -1,3 +1,4 @@
+package Range;
 public class Range<T extends Comparable<T>> {
     
     private T mMin, mMax;

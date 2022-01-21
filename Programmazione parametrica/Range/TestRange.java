@@ -1,3 +1,4 @@
+package Range;
 public class TestRange {
     public static void main(String[] args) {
         Range<Integer> a = new Range<>(10, 20);
