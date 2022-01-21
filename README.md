@@ -10,6 +10,7 @@
     <li><a href="#java-collection-framework">Java Collection Framework</a></li>
     <li><a href="#esercizi-elementari">Esercizi elementari</a></li>
     <li><a href="#classi-interne">Classi Interne</a></li>
+	<li><a href="#programmazione-parametrica">Programmazione parametrica</a></li>
     <li><a href="#criterio-di-ordinamento-tra-oggetti">Criterio di ordinamento tra oggetti</a></li>
     <li><a href="#iteratori-e-ciclo-foreach">Iteratori e ciclo foreach</a></li>
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
