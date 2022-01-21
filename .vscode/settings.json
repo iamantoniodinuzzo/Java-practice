@@ -23,6 +23,7 @@
         "JFC/Progression",
         "JFC/PostIt",
         "JFC/Polinomio bis",
+        "JFC/PartiallyComparable-Incompleto",
         "JFC/Panino",
         "JFC/Movie",
         "JFC/Molecola",
@@ -50,6 +51,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/BinRel-Incompleto"
+        "JFC/PartiallyComparable"
     ]
 }

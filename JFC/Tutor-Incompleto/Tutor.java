@@ -5,8 +5,14 @@ public class Tutor {
     private static TreeSet<Detector> detectors;
 
     public Tutor() {
-        this.carsMap = new HashMap<>();
-        this.detectors = new TreeSet<>(Detector.compareByKm);
+        Tutor.carsMap = new HashMap<>();
+        Tutor.detectors = new TreeSet<>(Detector.compareByKm);
+    }
+
+    public Detector addDetector(int km_position) {
+        Detector d = new Detector(km_position);
+        detectors.add(d);
+        return d;
     }
 
     static class Detector {
@@ -87,33 +93,10 @@ public class Tutor {
 
                 Car c = (Car) obj;
 
-                return this.targa.equals(c.getTarga());
+                return targa.equals(c.getTarga());
             }
         }
 
-    }
-
-    public Detector addDetector(int km) {
-        Detector d = new Detector(km);
-        detectors.add(d);
-        return d;
-    }
-
-    public static void main(String[] args) {
-        Tutor tang = new Tutor();
-        Tutor.Detector a = tang.addDetector(2);
-        Tutor.Detector b = tang.addDetector(5);
-        Tutor.Detector c = tang.addDetector(9);
-        // nuovo veicolo
-        System.out.println(a.carPasses("NA12345", 0));
-        // 3km in 1200 sec (20 minuti), quindi 9km/h
-        System.out.println(b.carPasses("NA12345", 1200));
-        // nuovo veicolo
-        System.out.println(b.carPasses("SA00001", 1200));
-        // 4km in 120 sec (2 minuti), quindi 120km/h
-        System.out.println(c.carPasses("NA12345", 1320));
-        // 4km in 180 sec (3 minuti), quindi 80km/h
-        System.out.println(c.carPasses("SA00001", 1380));
-    }
+    }   
 
 }
