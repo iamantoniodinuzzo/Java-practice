@@ -201,23 +201,6 @@ System.out.println(pc.add(board2)); // incompatibile ! false
 System.out.println(pc.add(board1));
 System.out.println(pc.add(ram));
 ```
-## [BinRel](https://github.com/Indisparte/Java-practice/tree/main/JFC/BinRel-Incompleto)
-Realizzare la classe BinRel, che rappresenta una relazione binaria tra un insieme e se stesso. Il
-metodo **addPair** aggiunge una coppia di oggetti alla relazione. Il metodo **areRelated** verifica se una
-data coppia di oggetti appartiene alla relazione. Il metodo **isSymmetric** verifica se la relazione è
-simmetrica.</br>
-L'implementazione deve rispettare il seguente caso d'uso:</br>
-**Esempio d'uso**
-```java
-BinRel<String> rel = new BinRel<>();
-rel .addPair("a", "albero");
-rel .addPair("a", "amaca");
-System.out.println( rel .isSymmetric());//false
-rel .addPair("albero", "a");
-rel .addPair("amaca", "a");
-System.out.println( rel .isSymmetric());//true
-System.out.println( rel .areRelated("a", "amaca"));//true
-```
 
 ## [Clinica](https://github.com/Indisparte/Java-practice/tree/main/JFC/Clinica-Incompleto)
 Data la seguente enumerazione:</br>

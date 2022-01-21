@@ -22,7 +22,6 @@
         "JFC/RadioChannel",
         "JFC/Progression",
         "JFC/PostIt",
-        "JFC/Polinomio bis-Incompleto",
         "JFC/Polinomio bis",
         "JFC/Panino",
         "JFC/Movie",
@@ -30,10 +29,10 @@
         "JFC/Merge",
         "JFC/MakeMap",
         "JFC/Library",
+        "JFC/Inventory",
         "JFC/Intersect",
         "JFC/Impianto e Apparecchio",
         "JFC/Highway",
-        "JFC/GreenPass2",
         "JFC/GreenPass",
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
@@ -45,11 +44,12 @@
         "JFC/Bug",
         "JFC/BoolExpr",
         "JFC/Book&Library",
+        "JFC/Auditorium-Incompleto",
         "Iteratori e ciclo foreach/Selector",
         "Iteratori e ciclo foreach/IncreasingSubsequence",
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Inventory"
+        "JFC/BinRel-Incompleto"
     ]
 }
