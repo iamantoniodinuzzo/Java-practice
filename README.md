@@ -910,6 +910,19 @@ System.out.println(b.isOverlapping(c)) ;//true
 Range<Object> d = new Range<>(); // errore di compilazione
 ```
 
+## [Pair](https://github.com/Indisparte/Java-practice/tree/main/Programmazione%20parametrica/Pair)
+
+Realizzare la classe parametrica Pair, che rappresenta una coppia di oggetti di tipo potenzialmente
+diverso. La classe deve supportare le seguenti funzionalità:
+1) due Pair sono uguali secondo equals se entrambe le loro componenti sono uguali secondo equals;
+2) il codice hash di un oggetto Pair è uguale allo XOR tra i codici hash delle sue due componenti;
+3) la stringa corrispondente ad un oggetto Pair è "(str1,str2)", dove str1 (rispettivamente,
+str2) è la stringa corrispondente alla prima (risp., seconda) componente.
+**Esempio d'uso**
+```java
+Pair<String,Integer> p1 = new Pair<String,Integer>("uno", 1);
+System.out.println(p1);
+```
 
 <p align="right">
 <a href="#programmazione-parametrica">Back to top of section</a>
