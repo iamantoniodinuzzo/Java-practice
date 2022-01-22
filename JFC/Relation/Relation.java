@@ -1,10 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
-
+import java.util.*;
 public class Relation<S, T> {
 
     private Map<S, ArrayList<T>> relations;
@@ -31,7 +25,7 @@ public class Relation<S, T> {
      */
     public Set<T> image(S x) {
         HashSet<T> result = new HashSet<>();
-        for (Entry<S, ArrayList<T>> entry : relations.entrySet()) {
+        for (Map.Entry<S, ArrayList<T>> entry : relations.entrySet()) {
             if (entry.getKey().equals(x))
                 result.addAll(entry.getValue());
         }
@@ -45,7 +39,7 @@ public class Relation<S, T> {
      */
     public Set<S> preImage(T x) {
         HashSet<S> result = new HashSet<>();
-        for (Entry<S, ArrayList<T>> entry : relations.entrySet()) {
+        for (Map.Entry<S, ArrayList<T>> entry : relations.entrySet()) {
             if (entry.getValue().contains(x))
                 result.add(entry.getKey());
         }
