@@ -924,6 +924,22 @@ Pair<String,Integer> p1 = new Pair<String,Integer>("uno", 1);
 System.out.println(p1);
 ```
 
+## [BoundedMap-Incompleto](https://github.com/Indisparte/Java-practice/tree/main/Programmazione%20parametrica/BoundedMap-Incompleto)
+Implementare la classe **BoundedMap**, che rappresenta una mappa con capacità limitata. Il costruttore
+accetta la dimensione massima della mappa. I metodi get e put sono analoghi a quelli
+dell'interfaccia **Map**. Se però la mappa è piena e viene invocato il metodo put con una chiave
+nuova, verrà rimossa dalla mappa la chiave che fino a quel momento è stata ricercata meno volte
+con **get**.
+L'implementazione deve rispettare il seguente **caso d'uso**.
+```java
+BoundedMap<String,String> m = new BoundedMap<String,String>(2);
+m.put("NA", "Napoli");
+m.put("SA", "Salerno");
+System.out.println(m.get("NA"));
+m.put("AV", "Avellino");
+System.out.println(m.get("SA"));
+```
+
 <p align="right">
 <a href="#programmazione-parametrica">Back to top of section</a>
 </p>
