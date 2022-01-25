@@ -1,11 +1,6 @@
-import java.io.FileReader;
-import java.nio.channels.NetworkChannel;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
-
 public class WiFi implements Iterable<WiFi.Network> {
     private ArrayList<Network> networks;
 
@@ -20,12 +15,12 @@ public class WiFi implements Iterable<WiFi.Network> {
 
             @Override
             public boolean hasNext() {
-                return (currPosition < networks.size()) && (networks.get(currPosition + 1) != null);
+                return (currPosition < networks.size());
             }
 
             @Override
             public Network next() {
-                return networks.get(currPosition++);
+               return  networks.get(currPosition++);
             }
 
             @Override

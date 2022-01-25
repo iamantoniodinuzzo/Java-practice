@@ -31,23 +31,25 @@ public class BoundedMap<T, U> {
     }
 
     public U put(T key, U value){
-        MapElem<T,U> new_me = new MapElem<>(key, value) ;
+          MapElem<T,U> new_elem = new MapElem<T,U>(key, value);
+
         for (Map.Entry<MapElem<T,U>, Integer> element : map.entrySet()) {
             MapElem<T,U> elem = element.getKey();
-            if(elem.equals(new_me)){
-                map.put(new_me, element.getValue());
-                return elem.getObj2();  
-              
-            }else{
-                map.put(new_me, 0);
-                break;
+            int counter = element.getValue();
+            if(elem.getObj1().equals(key)){
+                map.remove(elem.getObj1());
+                map.put(new_elem, counter);
+                System.out.println("Aggiunto: "+new_elem+" Rimosso: "+elem);
+                return elem.getObj2();
             }
-          
         }
-        //Se dopo questo inserimento la map supera la capacità
-         //rimuovi l'elemento meno chiamato con get non considerando questo appena messo
-        if(map.size() >= capacity)
-            findLessCommonKey(new_me);
+        map.put(new_elem, 0);
+        System.out.println("Aggiunto: "+new_elem);
+
+
+        if(map.size()>= capacity)
+            findLessCommonKey(new_elem);
+       
         return null;
         
     }
@@ -67,6 +69,15 @@ public class BoundedMap<T, U> {
         map.remove(lessCommonElem);
     }
 
+    @Override
+    public String toString(){
+        String result = "[\n";
+        for (Map.Entry<MapElem<T,U>, Integer> elem : map.entrySet()) {
+            result+= elem.getKey().toString()+", cercato: "+elem.getValue()+"\n";
+        }
+        result+= "]";
+        return result;
+    }
     
 
     private class MapElem<T, U>{
@@ -96,6 +107,10 @@ public class BoundedMap<T, U> {
         @Override
         public int hashCode() {
             return obj1.hashCode() ;
+        }
+
+        public String toString(){
+            return "("+obj1+","+obj2+")";
         }
         
 
