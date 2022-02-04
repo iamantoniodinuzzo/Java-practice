@@ -6,6 +6,7 @@
         "Multithreading/ThreadRace",
         "Multithreading/RunOnSet",
         "Multithreading/PeriodicJob",
+        "Multithreading/Myr",
         "Multithreading/Interruptor",
         "Multithreading/ExecuteInParallel",
         "Multithreading/DelayIterator",
@@ -24,8 +25,6 @@
         "JFC/Progression",
         "JFC/PostIt",
         "JFC/Polinomio bis",
-        "JFC/PartiallyComparable-Incompleto",
-        "JFC/PartiallyComparable",
         "JFC/Panino",
         "JFC/Movie",
         "JFC/Molecola",
@@ -53,6 +52,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Myr"
+        "JFC/Exchange"
     ]
 }

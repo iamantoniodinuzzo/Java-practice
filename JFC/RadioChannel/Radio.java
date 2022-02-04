@@ -5,6 +5,7 @@ import java.util.TreeSet;
 
 public class Radio implements Iterable<Radio.Channel> {
     private TreeSet<Radio.Channel> channels;
+    
 
     public Radio() {
         this.channels = new TreeSet<>(Channel.compareByFrequency);//associamo un comparatore alla struttura treeSet
@@ -51,10 +52,12 @@ public class Radio implements Iterable<Radio.Channel> {
         return new Iterator<Channel>(){
             int index = 0;
             ArrayList<Channel> list = new ArrayList<>(channels);
+            @Override
             public boolean hasNext(){
                 return index < list.size() && list.get(index) != null ;
             }
 
+            @Override
             public Channel next(){
                 Channel c =  list.get(index);
                 index++;
