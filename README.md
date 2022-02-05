@@ -16,7 +16,6 @@
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
     <li><a href="#multithreading">Multithreading</a></li>
-    <li><a href="#classe-mancante">Classe mancante</a></li>
 	<li><a href="#binding-dinamico">Binding Dinamico</a></li>
 	<li><a href="#contatto">Contatto</a></li>
 
@@ -1525,34 +1524,6 @@ esaurire tutto l'array.
 <p align="right">
 <a href="#table-of-contents">Back to top</a>
 
-</p>
-<!-- CLASSE MANCANTE -->
-
-# [Classe mancante](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante)
-<details>
-	<summary>Clicca per espandere !</summary>
-
-## [2008-3-27](https://github.com/Indisparte/Java-practice/tree/main/Classe%20Mancante/2008-3-27)
-La seguente classe A fa riferimento ad una classe B. Implementare la classe B in modo che venga
-compilata correttamente e permetta la compilazione della classe A.
-```java
-public class A extends B {
-	public A(int x) {
-		super(x-1, x / 2.0);
-	}
-	public A(double inutile) { }
-	private void stampa(String s) {
-		if (s == null) throw new B(s);
-		else System.out.println(s) ;
-		}
-}
-```
-<p align="right">
-<a href="#classe-mancante">Back to top of section</a>
-</p>
-</details>
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
 </p>
 
 # Contatto
