@@ -39,6 +39,7 @@
         "JFC/GetByType",
         "JFC/GameLevel-Incompleto",
         "JFC/FunnyOrder",
+        "JFC/Exchange",
         "JFC/Curriculum.java",
         "JFC/CountByType",
         "JFC/Contest",
@@ -52,6 +53,6 @@
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "JFC/Exchange"
+        "Uguaglianza tra oggetti/Tester"
     ]
 }
