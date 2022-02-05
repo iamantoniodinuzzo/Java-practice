@@ -47,12 +47,12 @@
         "JFC/Bug",
         "JFC/BoolExpr",
         "JFC/Book&Library",
-        "JFC/Auditorium-Incompleto",
+        "JFC/Auditorium",
         "Iteratori e ciclo foreach/Selector",
         "Iteratori e ciclo foreach/IncreasingSubsequence",
         "Esercizi elementari/Question&Answer",
         "Criterio di ordinamento tra oggetti/Product",
         "Criterio di ordinamento tra oggetti/Date",
-        "Uguaglianza tra oggetti/Tester"
+        "JFC/BoundedSet-Incompleto"
     ]
 }

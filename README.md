@@ -402,7 +402,7 @@ Infine, scegliere l'intestazione migliore oppure proporne un'altra.
 /*e)*/ <K,V> Map<K,V> inverseMap(Map<K,V> m)
 /*f)*/ <K,V> Map<K,V> inverseMap(Map<? extends V, ? extends K> m)
 ``` 
-## [BoundedSet](https://github.com/Indisparte/Java-practice/tree/main/JFC/BoundedSet-Incompleto)
+## [BoundedSet](https://github.com/Indisparte/Java-practice/tree/main/JFC/BoundedSet)
 Realizzare la classe **BoundedSet**, che rappresenta un insieme di capacità limitata. Il costruttore
 accetta la capacità massima dell'insieme. La classe deve implementare i metodi **add**, **contains** e **size**
 secondo il contratto previsto dall'interfaccia Set. Se però l'insieme è alla sua capacità massima e
@@ -476,7 +476,7 @@ System.out.println(r .isConnected(s));//true
 System.out.println(r .isConnected(p));//false
 ```
 
-## [Auditorium](https://github.com/Indisparte/Java-practice/tree/main/JFC/Auditorium-Incompleto)
+## [Auditorium](https://github.com/Indisparte/Java-practice/tree/main/JFC/Auditorium)
 La seguente classe (semplificata) Seat rappresenta un posto in un auditorium.</br>
 ```java
 public class Seat { public int row, col; }
@@ -491,11 +491,11 @@ restituisce null.
 ```java
 Auditorium a = new Auditorium(5, 5, new Comparator<Seat>() {
 public int compare(Seat a, Seat b) {
-return (a.row==b.row)? (a.col􀀀b.col): (a.row􀀀b.row);
+return (a.row==b.row)? (a.col-b.col): (a.row-b.row);
 }
 });
 Set<Seat> s = a.assignSeats(4);
-System.out.println(s) ;
+System.out.println(s) ;//[(0,0),(0,1),(0,2),(0,3)]
 ```
 
 ## [SocialNetwork](https://github.com/Indisparte/Java-practice/tree/main/JFC/SocialNetwork)
