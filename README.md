@@ -873,16 +873,6 @@ System.out.println(a.count(3));//1
 System.out.println(a.getMostCommon());//7
 System.out.println(b.getMostCommon());//allora?
 ```
-
-<p align="right">
-<a href="#java-collection-framework">Back to top of section</a>
-
-</p>
-</details>
-<p align="right">
-<a href="#table-of-contents">Back to top</a>
-</p>
-
 ## [Exchange](https://github.com/Indisparte/Java-practice/tree/main/JFC/Exchange)
 Realizzare la classe **Exchange** che rappresenta una borsa valori. Il metodo **setPrice** imposta il prezzo
 corrente di un titolo quotato. Il metodo **addLowAlert** fa in modo che un dato runnable venga eseguito la prima 
@@ -903,6 +893,16 @@ L'implementazione deve rispettare il seguente caso d'uso:
 
  borsa.setPrice("MaxiCom", 12.3);//More than 12!
  ```
+<p align="right">
+<a href="#java-collection-framework">Back to top of section</a>
+
+</p>
+</details>
+<p align="right">
+<a href="#table-of-contents">Back to top</a>
+</p>
+
+
 
 <!--PROGRAMMAZIONE PARAMETRICA-->
 # [Programmazione parametrica](https://github.com/Indisparte/Java-practice/tree/main/Programmazione%20parametrica)
