@@ -73,9 +73,6 @@ public class Exchange {
         public String getNome() {
             return nome;
         }
-        public double getValore() {
-            return valore;
-        }
 
         public synchronized void setValore(double valore) {
             //controlla se il valore supera o è uguale a qualche limite
