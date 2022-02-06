@@ -26,6 +26,12 @@
 ## About The Project
 Questa repository è stata creata per esercitarmi con l'esame a scelta di **Linguaggi di programmazione II** del seguente [CDL](http://informatica.dieti.unina.it/index.php/it/)
 
+- Ogni **titolo di sezione** porta alla cartella contentente altri esercizi inerenti a quell'argomento.
+- Ogni **titolo di esercizio** porta all'esercizio specifico e al suo svolgimento.
+	- Se questo non dovesse capitare è perchè l'esercizio è targato come incompleto.
+
+Alcuni di questi esercizi presentano dei *tips* presi dal libro [Effective Java](https://www.amazon.it/Effective-Java-Joshua-Bloch-dp-0134685997/dp/0134685997/ref=dp_ob_image_bk) che sto raccogliento in un file che presto renderò disponibile in questa repository.
+
 Fanne buon uso!
 
 
@@ -1528,8 +1534,8 @@ esaurire tutto l'array.
 
 # Contatto
 Invia una email a 📫 **tonydinu02@gmail.com** per qualsiasi errore, confronto o consiglio!
-> Inserisci come oggetto nella email "[GitHub] oggetto" dove per oggetto si intende il motivo per cui mi stai romp
+> Inserisci come oggetto nella email "[GitHub] oggetto " dove per *oggetto* si intende il motivo per cui mi stai contattando.
 
-Risponderò appena sarò disponibile.
+p.s. Clica sulla email, risponderò appena sarò disponibile.
 
 
