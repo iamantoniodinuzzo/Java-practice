@@ -16,7 +16,6 @@
     <li><a href="#uguaglianza-tra-oggetti">Uguaglianza tra oggetti</a></li>
     <li><a href="#scelta-della-firma">Scelta della firma</a></li>
     <li><a href="#multithreading">Multithreading</a></li>
-	<li><a href="#binding-dinamico">Binding Dinamico</a></li>
 	<li><a href="#contatto">Contatto</a></li>
 
   </ul>
