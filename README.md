@@ -1,8 +1,5 @@
-<p>
-<center><h1> Esercizi di Java avanzato</h1></center>
-</p>
+# Esercizi di Java avanzato</h1></center>
 
-<img src='https://random-memer.herokuapp.com/' title="Meme" alt="Please refresh the page if the meme doesn't show up.">
 
 ## Table of contents
 <!-- TABLE OF CONTENTS -->
